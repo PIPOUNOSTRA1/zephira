@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAPHERA - لوحة التحكم</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Premium standalone dashboard styles */
+    body {
+      background-color: var(--color-bg-obsidian);
+      color: var(--color-text-white);
+      font-family: var(--font-arabic);
+      direction: rtl;
+      text-align: right;
+    }
+    .admin-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: var(--border-glass);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      direction: rtl;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .logo span {
+      color: var(--color-gold-liquid);
+    }
+    .logout-btn {
+      background: rgba(255, 56, 56, 0.15);
+      border: 1px solid rgba(255, 56, 56, 0.3);
+      color: #ff5252;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-family: var(--font-arabic);
+      transition: var(--transition-smooth);
+    }
+    .logout-btn:hover {
+      background: #ff5252;
+      color: #fff;
+    }
+
+    /* Tabs */
+    .tabs-nav {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      border-bottom: var(--border-glass);
+      padding-bottom: 12px;
+    }
+    .tab-btn {
+      background: rgba(255,255,255,0.05);
+      border: var(--border-glass);
+      color: var(--color-text-muted);
+      padding: 10px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: var(--transition-smooth);
+      font-family: var(--font-arabic);
+    }
+    .tab-btn.active {
+      background: var(--color-gold-liquid);
+      color: #1a201e;
+      border-color: var(--color-gold-liquid);
+    }
+    .tab-btn:hover:not(.active) {
+      background: rgba(22, 78, 65, 0.05);
+      color: var(--color-primary-emerald);
+    }
+
+    /* Action bar */
+    .action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      background: var(--color-gold-liquid);
+      color: #1a201e;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      font-family: var(--font-arabic);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-primary:hover {
+      background: var(--color-gold-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Content Cards */
+    .item-card {
+      background: var(--color-bg-card);
+      border: var(--border-glass);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      transition: var(--transition-smooth);
+    }
+    .item-card:hover {
+      border-color: var(--color-gold-liquid);
+      box-shadow: var(--shadow-gold);
+    }
+    .item-details {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .item-img {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .item-text h4 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+      color: var(--color-text-white);
+    }
+    .item-text p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-bottom: 2px;
+    }
+    .action-buttons {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-action {
+      background: #ffffff;
+      border: var(--border-glass);
+      color: var(--color-text-white);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      font-family: var(--font-arabic);
+      box-shadow: var(--shadow-gold);
+    }
+    .btn-action:hover {
+      background: var(--color-gold-liquid);
+      color: #1a201e;
+      border-color: var(--color-gold-liquid);
+    }
+
+    /* Modal dialog */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1100;
+      padding: 20px;
+    }
+    .modal-box {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-gold-liquid);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 600px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 24px;
+      position: relative;
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: transparent;
+      border: none;
+      color: var(--color-text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .modal-close-btn:hover {
+      color: var(--color-text-white);
+    }
+    .modal-title {
+      color: var(--color-gold-liquid);
+      margin-bottom: 20px;
+      font-family: var(--font-arabic);
+      font-size: 1.4rem;
+      border-bottom: 1px solid rgba(212,175,55,0.1);
+      padding-bottom: 8px;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 580px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .form-group-full {
+      grid-column: 1 / -1;
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .checkbox-group input {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+    .upload-status {
+      font-size: 0.8rem;
+      color: var(--color-gold-liquid);
+      margin-top: 4px;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/zaphera-Dro0bmLz.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/index-D1CPSUYL.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-JTNupX78.css">
+</head>
+<body>
+
+  <!-- Secure Portal Authentication Overlay -->
+  <div class="auth-overlay" id="auth-panel" style="display: none; direction: ltr;">
+    <div class="auth-box">
+      <div class="logo" style="margin-bottom: 12px; font-family: var(--font-serif);">ZAPHERA<span>.</span></div>
+      <h3 style="margin-bottom: 24px; color: var(--color-gold-liquid); font-family: var(--font-arabic);">لوحة التحكم الموثقة</h3>
+      
+      <div class="form-group" style="text-align: left;">
+        <label for="admin-token-input">أدخل رمز الوصول الخاص بالمسؤول</label>
+        <input type="password" id="admin-token-input" placeholder="••••••••••••••••" style="text-align: left; direction: ltr;">
+      </div>
+      
+      <button type="button" class="cta-button" id="auth-submit-btn" style="padding: 10px 20px;">
+        <i class="fa-solid fa-right-to-bracket"></i> دخول
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container" style="max-width: 900px; padding-top: 24px;">
+    
+    <div class="admin-header">
+      <div>
+        <h1 class="logo">ZAPHERA<span>.</span></h1>
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 4px;">لوحة تحكم المنتجات والمجموعات لمتجر زافيرا</p>
+      </div>
+      <button class="logout-btn" id="logout-btn"><i class="fa-solid fa-power-off"></i> تسجيل الخروج</button>
+    </div>
+
+
+
+    <!-- PRODUCTS INVENTORY VIEW -->
+    <div id="view-products" class="tab-content">
+      <div class="action-bar">
+        <h2 style="font-size: 1.2rem; border-right: 3px solid var(--color-gold-liquid); padding-right: 8px;">إدارة ملابس المتجر (القفاطين والكاراكو)</h2>
+        <button class="btn-primary" onclick="openProductModal()"><i class="fa-solid fa-plus"></i> إضافة منتج جديد</button>
+      </div>
+
+      <div class="orders-list-box" style="background: transparent; border: none; padding: 0;">
+        <div id="products-list-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- ADD/EDIT PRODUCT MODAL -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeProductModal()">&times;</button>
+      <h3 class="modal-title" id="product-modal-title">إضافة منتج جديد</h3>
+      
+      <form id="product-form" onsubmit="saveProduct(event)">
+        <input type="hidden" id="product-id">
+        <div class="form-grid">
+          
+          <div class="form-group">
+            <label for="product-name-ar">الاسم بالكامل (عربي) *</label>
+            <input type="text" id="product-name-ar" required placeholder="مثال: قفطان ملكي أخضر">
+          </div>
+          
+          <div class="form-group">
+            <label for="product-name-en">الاسم بالكامل (إنجليزي) *</label>
+            <input type="text" id="product-name-en" required placeholder="e.g. Royal Emerald Caftan" style="text-align: left; direction: ltr;">
+          </div>
+
+          <div class="form-group">
+            <label for="product-slug">معرف الرابط (سلاغ فريد بالإنجليزية) *</label>
+            <input type="text" id="product-slug" required placeholder="e.g. emerald-royal-caftan" style="text-align: left; direction: ltr;">
+          </div>
+
+
+
+          <div class="form-group">
+            <label for="product-price">السعر الحالي (DZD) *</label>
+            <input type="number" id="product-price" step="0.01" required placeholder="120000">
+          </div>
+
+          <div class="form-group">
+            <label for="product-old-price">السعر الأصلي للخصم (DZD)</label>
+            <input type="number" id="product-old-price" step="0.01" placeholder="199000">
+          </div>
+
+          <div class="form-group-full form-group">
+            <label for="product-desc-ar">الوصف (عربي)</label>
+            <textarea id="product-desc-ar" rows="3" placeholder="اكتب تفاصيل القفطان أو الكاراكو..."></textarea>
+          </div>
+
+          <div class="form-group-full form-group">
+            <label for="product-desc-en">الوصف (إنجليزي)</label>
+            <textarea id="product-desc-en" rows="3" placeholder="Detailed English description..." style="text-align: left; direction: ltr;"></textarea>
+          </div>
+
+          <div class="form-group-full form-group">
+            <label for="product-fabric-ar">الأقمشة والخامات (عربي)</label>
+            <textarea id="product-fabric-ar" rows="2" placeholder="تفاصيل الأقمشة المستخدمة مثل المخمل والحرير..."></textarea>
+          </div>
+
+          <div class="form-group-full form-group">
+            <label for="product-fabric-en">الأقمشة والخامات (إنجليزي)</label>
+            <textarea id="product-fabric-en" rows="2" placeholder="Fabric and materials detail in English..." style="text-align: left; direction: ltr;"></textarea>
+          </div>
+
+          <div class="form-group-full form-group">
+            <label for="product-design-story-ar">قصة التصميم والتراث (عربي)</label>
+            <textarea id="product-design-story-ar" rows="3" placeholder="القصة والارتباط التراثي والثقافي للقطعة..."></textarea>
+          </div>
+
+          <div class="form-group-full form-group">
+            <label for="product-design-story-en">قصة التصميم والتراث (إنجليزي)</label>
+            <textarea id="product-design-story-en" rows="3" placeholder="Heritage design story in English..." style="text-align: left; direction: ltr;"></textarea>
+          </div>
+
+          <div class="form-group-full form-group">
+            <label for="product-embroidery-ar">تفاصيل التطريز والحرفية (عربي)</label>
+            <textarea id="product-embroidery-ar" rows="2" placeholder="النقوش المطرزة يدوياً مثل الفتلة والمجبود..."></textarea>
+          </div>
+
+          <div class="form-group-full form-group">
+            <label for="product-embroidery-en">تفاصيل التطريز والحرفية (إنجليزي)</label>
+            <textarea id="product-embroidery-en" rows="2" placeholder="Embroidery details in English..." style="text-align: left; direction: ltr;"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="product-image-url">رابط الصورة الرئيسية *</label>
+            <input type="text" id="product-image-url" required placeholder="/images/emerald_caftan.png" style="text-align: left; direction: ltr;">
+          </div>
+
+          <div class="form-group">
+            <label for="product-image-file">أو ارفع ملف الصورة من جهازك</label>
+            <input type="file" id="product-image-file" accept="image/*">
+            <div class="upload-status" id="product-upload-status"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="product-sizes">المقاسات المتوفرة (مفصولة بفاصلة)</label>
+            <input type="text" id="product-sizes" value="S, M, L, XL, XXL" placeholder="S, M, L, XL">
+          </div>
+
+          <div class="form-group">
+            <label for="product-colors">الألوان المتوفرة (مفصولة بفاصلة)</label>
+            <input type="text" id="product-colors" value="Gold" placeholder="Emerald, Gold">
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="product-in-stock" checked>
+            <label for="product-in-stock">المنتج متوفر بالمخزن</label>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="product-is-featured">
+            <label for="product-is-featured">تمييز المنتج في الواجهة الرئيسية</label>
+          </div>
+
+          <div class="form-group-full" style="margin-top: 20px; display: flex; gap: 12px; justify-content: flex-start;">
+            <button type="submit" class="btn-primary">حفظ المنتج</button>
+            <button type="button" class="btn-primary" style="background:#555; color:#fff;" onclick="closeProductModal()">إلغاء</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>
