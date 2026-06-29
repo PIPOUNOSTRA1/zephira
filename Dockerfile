@@ -2,16 +2,17 @@
 FROM node:18-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
-COPY . .
-# Vite reads VITE_ environment variables at build time. 
-# Make sure to configure environment variables in your deployment pipeline (Easypanel).
-RUN npm run build
+RUN npm ci --only=production
 
 # Production stage
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
-# Copy default nginx configuration if customized routing is needed, 
-# otherwise default will serve index.html and static assets correctly.
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+FROM node:18-alpine
+WORKDIR /app
+COPY --from=builder /app/node_modules ./node_modules
+COPY package*.json ./
+COPY . .
+
+ENV NODE_ENV=production
+EXPOSE 5000
+
+# Start server (which executes database migrations programmatically on startup)
+CMD ["node", "server.js"]
