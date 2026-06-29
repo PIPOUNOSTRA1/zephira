@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  # Local PostgreSQL Database service
+  database:
+    image: postgres:15-alpine
+    container_name: zaphera_database
+    environment:
+      POSTGRES_USER: ZAPHIRACOFTAN_database
+      POSTGRES_PASSWORD: securepassword123
+      POSTGRES_DB: ZAPHIRACOFTAN
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ZAPHIRACOFTAN_database -d ZAPHIRACOFTAN"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Express.js Backend API service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: zaphera_backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=development
+      # Connects using docker service name "database"
+      - DATABASE_URL=postgres://ZAPHIRACOFTAN_database:securepassword123@database:5432/ZAPHIRACOFTAN?sslmode=disable
+      - ADMIN_TOKEN=adminsecret123
+      - GOOGLE_SHEET_WEBHOOK_URL=https://script.google.com/macros/s/placeholder/exec
+      - SNAP_PIXEL_ID=placeholder_snap
+      - SNAP_ACCESS_TOKEN=placeholder_snap_token
+      - TIKTOK_PIXEL_ID=placeholder_tiktok
+      - TIKTOK_ACCESS_TOKEN=placeholder_tiktok_token
+    depends_on:
+      database:
+        condition: service_healthy
+
+  # Nginx Frontend service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: zaphera_frontend
+    ports:
+      - "8080:80"
+    environment:
+      - VITE_API_URL=http://localhost:5000
+      - VITE_TIKTOK_PIXEL_ID=placeholder_tiktok
+      - VITE_SNAP_PIXEL_ID=placeholder_snap
+      - VITE_ADMIN_TOKEN=adminsecret123
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
