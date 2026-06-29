@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAPHERA - Luxury Algerian Traditional Couture</title>
+  <meta name="description" content="Shop the exclusive luxury Algerian Caftans and Karakous by ZAPHERA. Handcrafted traditional embroidery, custom sized for weddings and special occasions. Free delivery and Cash on Delivery across Algeria.">
+  <link rel="stylesheet" href="/index.css">
+  <!-- FontAwesome Icons for UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <button id="lang-toggle" class="lang-switch-btn">EN</button>
+    <div class="promo-text" id="promo-banner">
+      ✨ توصيل سريع ومجاني لكافة الولايات الجزائرية اليوم فقط ✨
+    </div>
+  </div>
+
+  <div class="container" id="main-content">
+    
+    <!-- Branding Header -->
+    <header class="logo-header">
+      <div class="logo" id="logo-btn">ZAPHERA<span>.</span></div>
+      <div class="tagline" id="tagline-text">HAUTE COUTURE ALGERIENNE</div>
+    </header>
+
+    <!-- Urgency Ticker -->
+    <div class="urgency-ticker">
+      <div class="active-users">
+        <span class="pulse-indicator"></span>
+        <span id="active-users-count">128 متصفحة الآن من الجزائر العاصمة</span>
+      </div>
+      <div class="stock-alert" id="stock-ticker">
+        متبقي 5 قطع فقط في المخزن للتوصيل الفوري
+      </div>
+    </div>
+
+    <!-- HOME VIEW -->
+    <div id="home-view">
+      
+      <!-- Brand Banner Cover -->
+      <div class="brand-banner-cover">
+        <img src="/images/zephira_banner.png" alt="Zephira Caftan Banner">
+      </div>
+      
+      <!-- Interactive Luxury Hero Slider -->
+      <div class="luxury-slider">
+        <div class="slides-container" id="slides-wrapper">
+          <div class="slide-item active">
+            <img src="/images/emerald_caftan.png" alt="القفطان الملكي الأخضر">
+            <div class="slide-overlay">
+              <span class="slide-badge" id="slide-badge-1">القفطان الجزائري الفاخر</span>
+              <h3 id="slide-title-1">سحر الشرق وأناقة الملكات</h3>
+              <p id="slide-desc-1">تصاميم مطرزة بالخيوط الذهبية الفاخرة لحضور ملكي متميز في الأعراس</p>
+              <button class="btn-primary slider-action-btn" id="slide-btn-1" onclick="window.scrollToCatalog()">اكتشفي التشكيلة</button>
+            </div>
+          </div>
+          <div class="slide-item">
+            <img src="/images/royal_blue_karakou.png" alt="كاراكو عاصمي ملكي">
+            <div class="slide-overlay">
+              <span class="slide-badge" id="slide-badge-2">الكاراكو العاصمي التقليدي</span>
+              <h3 id="slide-title-2">عراقة الماضي بلمسة عصرية</h3>
+              <p id="slide-desc-2">سترة مخملية مطرزة بالفتلة العاصمية الأصيلة مقترنة بحرير طبيعي انسيابي</p>
+              <button class="btn-primary slider-action-btn" id="slide-btn-2" onclick="window.scrollToCatalog()">شاهدي التصاميم</button>
+            </div>
+          </div>
+          <div class="slide-item">
+            <img src="/images/white_bridal_karakou.png" alt="كاراكو العروس الأبيض">
+            <div class="slide-overlay">
+              <span class="slide-badge" id="slide-badge-3">مجموعة العرائس والأفراح</span>
+              <h3 id="slide-title-3">تألقي كملكة في ليلة العمر</h3>
+              <p id="slide-desc-3">كاراكو وقفاطين زفاف مصممة خصيصاً لتخليد أسعد لحظات حياتكِ</p>
+              <button class="btn-primary slider-action-btn" id="slide-btn-3" onclick="window.scrollToCatalog()">عرض مجموعة الأفراح</button>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn prev-btn" id="prev-slide-btn" onclick="window.moveSlide(-1)">&lt;</button>
+        <button class="slider-btn next-btn" id="next-slide-btn" onclick="window.moveSlide(1)">&gt;</button>
+        <div class="slider-dots" id="slider-dots-container">
+          <div class="slider-dot active" onclick="window.goToSlide(0)"></div>
+          <div class="slider-dot" onclick="window.goToSlide(1)"></div>
+          <div class="slider-dot" onclick="window.goToSlide(2)"></div>
+        </div>
+      </div>
+
+      <!-- Teaser Brand Story Section -->
+      <section class="brand-story-section">
+        <h3 class="section-title" id="story-title">قصة زافيرا - أصالة التراث وعراقة التفاصيل</h3>
+        <p class="story-desc" id="story-text-1">
+          في متجر زافيرا، نؤمن بأن كل قفطان وكاراكو جزائري ليس مجرد قطعة ملابس، بل هو إرث وتاريخ يحكي قروناً من الحضارة والجمال. نحن ملتزمون بالمحافظة على تراثنا الجزائري العريق من خلال خياطة وتطريز كل قطعة يدوياً بخيوط "الفتلة" و"المجبود" الذهبية الفاخرة على أرقى أنواع القطيفة والحرير الطبيعي.
+        </p>
+        <p class="story-desc" id="story-text-2">
+          تصاميمنا الفخمة مصممة بعناية فائقة للأعراس، الخطوبة، والمناسبات السعيدة لكي تتألقي كملكة فخورة بأصالتها، مع لمسة عصرية تواكب أحدث خطوط الموضة الراقية.
+        </p>
+      </section>
+
+      <!-- Catalog Section Title -->
+      <div id="catalog-section" class="catalog-anchor-point">
+        <h3 class="section-title" id="catalog-title">التشكيلة الملكية الفاخرة</h3>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-list-grid">
+        <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--color-text-muted);">
+          <i class="fa-solid fa-spinner fa-spin" style="font-size: 2rem; margin-bottom: 12px;"></i>
+          <p>تحميل التشكيلة التراثية...</p>
+        </div>
+      </div>
+
+      <!-- Product Heritage Analysis Section -->
+      <section class="heritage-analysis-section">
+        <h3 class="section-title" id="analysis-title">دليل التراث - كيف يُصنع الجمال الأصيل؟</h3>
+        <div class="analysis-grid">
+          <div class="analysis-card">
+            <div class="analysis-card-header">
+              <span class="icon">✨</span>
+              <h4 id="karakou-header">الكاراكو العاصمي التقليدي</h4>
+            </div>
+            <p id="karakou-body">
+              تحفة فنية تجمع بين سترة مخملية ("فيست") مطرزة يدوياً بالفتلة العاصمية على القطيفة الفاخرة بنقوش مستوحاة من التاريخ العاصمي، مقترنة مع "سروال الشلقة" الحريري المنسدل والمفتوح من الجانبين أو "سروال المدور" العريض لتجسيد قمة الأنوثة الجزائرية.
+            </p>
+          </div>
+          <div class="analysis-card">
+            <div class="analysis-card-header">
+              <span class="icon">👑</span>
+              <h4 id="caftan-header">القفطان الجزائري الملكي</h4>
+            </div>
+            <p id="caftan-body">
+              رداء حريري أو مخملي طويل مفتوح من الأمام، مطرز بالكامل بنقوش المجبود والفتلة المذهبة على أقمشة البروكار أو القطيفة الثقيلة، ويقفل بـ "العقاد" التقليدية وحزام "المحزمة" الذهبي المطرز لإبراز خصر المرأة ومنحها قامة ملكية لا تضاهى.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive FAQ Section -->
+      <section class="faq-section">
+        <h3 class="section-title" id="faq-title">الأسئلة الشائعة</h3>
+        <div class="faq-accordion">
+          
+          <div class="faq-item">
+            <button class="faq-question" id="faq-q1">
+              <span>كيف أختار المقاس المناسب لجسدي؟</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer" id="faq-a1">
+              <p>يمكنكِ اختيار مقاسك المعتاد بناءً على جدول المقاسات. عند تأكيد الطلب، سيتواصل معكِ خبير القياسات لدينا عبر الواتساب لتأكيد طولكِ، وزنكِ، وعرض الكتفين لضمان أن القطعة ستلائم جسدكِ تماماً وكأنها مصممة لكِ خصيصاً.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" id="faq-q2">
+              <span>ما هي مدة وكلفة التوصيل في الجزائر؟</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer" id="faq-a2">
+              <p>التوصيل سريع ومجاني بالكامل لجميع الولايات الجزائرية (58 ولاية). يستغرق التوصيل إلى الجزائر العاصمة، البليدة، وتيبازة حوالي 24 ساعة، وباقي الولايات من 48 إلى 72 ساعة كحد أقصى.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" id="faq-q3">
+              <span>هل يمكنني فحص ومعاينة الفستان قبل الدفع؟</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer" id="faq-a3">
+              <p>نعم، بالتأكيد! نحن نعتمد نظام الدفع عند الاستلام (COD). يمكنكِ فتح الطرد، معاينة خامة المخمل والحرير ودقة التطريز والفتلة قبل تسليم المبلغ للمندوب لضمان رضاكِ الكامل وثقتكِ بجودتنا.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" id="faq-q4">
+              <span>كيف أحافظ على القطيفة والتطريز الذهبي (الفتلة)؟</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer" id="faq-a4">
+              <p>للحفاظ على الخيوط الذهبية الحساسة ولمعان القطيفة الفاخرة، نوصي بشدة بتنظيف الفستان عن طريق التنظيف الجاف فقط (Dry Clean) وتجنب الكي المباشر على خيوط التطريز لمنع تلفها.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- PRODUCT DETAIL VIEW -->
+    <div id="detail-view" style="display: none;">
+      <!-- Navigation & Return -->
+      <button class="back-btn" onclick="navigateToHome()"><i class="fa-solid fa-arrow-right" id="back-arrow-icon"></i> <span id="btn-back-text">العودة للمتجر</span></button>
+      
+      <!-- SPLIT HERO GRID SECTION -->
+      <div class="landing-hero-grid">
+        <!-- Gallery Showcase (Right Column on Desktop) -->
+        <div class="landing-gallery-container">
+          <div class="product-gallery">
+            <span class="luxury-gallery-overlay" id="lbl-luxury-badge"><i class="fa-solid fa-crown"></i> تفصيل يدوي فاخر</span>
+            <img id="detail-main-image" src="" alt="">
+          </div>
+          <div class="gallery-nav" id="detail-gallery-dots"></div>
+        </div>
+
+        <!-- Buy / Offer Details (Left Column on Desktop) -->
+        <div class="landing-offer-details">
+          <div class="offer-badge-row">
+            <span class="offer-badge" id="detail-stock-badge"><i class="fa-solid fa-sparkles"></i> متوفر في المخزن</span>
+          </div>
+          <h1 class="landing-product-title" id="detail-title"></h1>
+          
+          <p class="landing-product-desc" id="detail-desc"></p>
+
+          <div class="rating-trust-row">
+            <span class="stars-stars">⭐⭐⭐⭐⭐</span>
+            <span class="rating-val">4.9/5</span>
+            <span class="reviews-count-lbl" id="lbl-reviews-count">(120 تقييم)</span>
+          </div>
+
+          <!-- Trust Icons Row -->
+          <div class="landing-trust-grid">
+            <div class="trust-pill"><span class="icon">🚚</span> <span class="t-badge-shipping-title">توصيل سريع ومجاني</span></div>
+            <div class="trust-pill"><span class="icon">💵</span> <span class="t-badge-cod-title">الدفع عند الاستلام</span></div>
+            <div class="trust-pill"><span class="icon">✨</span> <span class="t-badge-quality-title">جودة مضمونة 100%</span></div>
+          </div>
+
+          <!-- Quantity / Package Bundle Selector -->
+          <div class="bundle-selector-section">
+            <label class="bundle-label" id="lbl-bundle-title">اختر الكمية والعرض الخاص بكِ *</label>
+            <div class="bundle-options" id="detail-bundle-options">
+              <!-- Bundle items rendered dynamically based on selected pricing -->
+            </div>
+          </div>
+
+          <!-- Size Customization Selector -->
+          <div class="size-selector-section" id="detail-size-section">
+            <div class="options-title" id="lbl-size-title">اختاري المقاس المناسب *</div>
+            <div class="size-selector-container" id="detail-sizes"></div>
+            <span class="selector-hint" id="lbl-size-hint">✨ لا تقلقي بشأن المقاس، خبير القياسات لدينا سيتواصل معكِ بعد الطلب عبر الهاتف والواتساب لتأكيد القياسات بدقة وضمان تفصيل مثالي لجسدكِ!</span>
+          </div>
+
+          <!-- Color Customization Selector -->
+          <div class="color-selector-section" id="detail-color-section" style="display:none;">
+            <div class="options-title" id="lbl-color-title">اللون</div>
+            <div class="color-selector-container" id="detail-colors"></div>
+          </div>
+
+          <div class="price-summary-row">
+            <span class="lbl" id="lbl-total-price">السعر الإجمالي:</span>
+            <div class="val-pricing">
+              <span class="original-price" id="detail-price-old" style="display:none;"></span>
+              <span class="current-price" id="detail-price-new"></span>
+              <span class="discount-tag" id="detail-discount-tag" style="display:none;"></span>
+            </div>
+          </div>
+
+          <!-- Main CTA Action to scroll or submit -->
+          <button class="cta-button checkout-trigger-btn" onclick="document.getElementById('checkout-form-section').scrollIntoView({ behavior: 'smooth' })">
+            <i class="fa-solid fa-shopping-cart"></i> <span id="quick-buy-text">اطلبي الآن - الدفع عند الاستلام</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- PROBLEM SECTION: WHY THIS DRESS IS UNIQUE -->
+      <section class="landing-problem-section">
+        <h2 class="problem-title" id="detail-problem-title">حيرة اختيار المقاس والخياطة المثالية للأعراس.. كابوس كل سيدة</h2>
+        <div class="colored-divider"></div>
+        <p class="problem-desc" id="detail-problem-desc">
+          نعلم جيداً أن شراء قفطان أو كاراكو عبر الإنترنت يثير قلقكِ بشأن جودة الأقمشة ودقة المقاس. خياطة الأعراس تتطلب تفصيلاً دقيقاً لجسدكِ وليس مجرد مقاسات جاهزة. في زافيرا، قمنا بحل هذه المشكلة بالكامل: نقوم بالتأكيد الهاتفي للمقاسات من قبل خبير، وتطريز يدوّي يستغرق أكثر من 60 ساعة، مع منحكِ حق فحص ومعاينة القطيفة والحرير بالكامل قبل الدفع عند الاستلام.
+        </p>
+      </section>
+
+      <!-- EMOTIONAL HERITAGE & DESIGNER'S QUOTE -->
+      <section class="landing-story-section" id="detail-story-card">
+        <h3 class="section-title" id="lbl-story-card-title">👑 قصة التصميم</h3>
+        <div class="design-quote-block">
+          <i class="fa-solid fa-quote-right quote-icon"></i>
+          <p id="detail-design-quote" class="quote-text"></p>
+          <span class="designer-signature" id="lbl-designer-sig">— مصممة زافيرا</span>
+        </div>
+        <p id="detail-design-story" class="design-story-desc"></p>
+      </section>
+
+      <!-- FABRICS & CRAFTSMANSHIP GRID -->
+      <section class="landing-materials-section">
+        <h2 class="materials-title" id="detail-materials-title">أقمشة وتطريزات تحاكي الهوية والملكية</h2>
+        <div class="landing-specs-grid">
+          <div class="spec-card" id="detail-fabric-card">
+            <div class="spec-card-header">
+              <span class="spec-icon">🧵</span>
+              <h4 id="lbl-fabric-card-title">الأقمشة والخامات</h4>
+            </div>
+            <p id="detail-fabric" class="spec-text"></p>
+          </div>
+          <div class="spec-card" id="detail-embroidery-card">
+            <div class="spec-card-header">
+              <span class="spec-icon">✨</span>
+              <h4 id="lbl-embroidery-card-title">تفاصيل التطريز</h4>
+            </div>
+            <p id="detail-embroidery" class="spec-text"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP-BY-STEP CUSTOM TAILORING PROCESS -->
+      <section class="landing-process-section">
+        <h2 class="process-title" id="lbl-process-title">خطوات تفصيل فستانكِ المخصص في زافيرا</h2>
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="step-circle">١</div>
+            <h4 id="lbl-proc-1-title">تسجيل الحجز</h4>
+            <p id="lbl-proc-1-desc">املئي بياناتكِ بالأسفل لحجز الفستان فورياً وتأكيد طلبيتكِ بنجاح.</p>
+          </div>
+          <div class="process-card">
+            <div class="step-circle">٢</div>
+            <h4 id="lbl-proc-2-title">تأكيد المقاسات هاتفياً</h4>
+            <p id="lbl-proc-2-desc">سيتصل بكِ خبير القياسات لدينا عبر الهاتف والواتساب لتأكيد الطول، الوزن، والأكتاف بدقة.</p>
+          </div>
+          <div class="process-card">
+            <div class="step-circle">٣</div>
+            <h4 id="lbl-proc-3-title">الخياطة والمعاينة</h4>
+            <p id="lbl-proc-3-desc">نقوم بخياطة الفستان يدوياً وتوصيله مجاناً لباب منزلكِ، ولكِ حق المعاينة قبل الدفع عند الاستلام.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GOLDEN GUARANTEE SECTION -->
+      <section class="landing-guarantee-section">
+        <div class="guarantee-box">
+          <div class="guarantee-header">
+            <span class="guarantee-icon">👑</span>
+            <h3 id="lbl-guarantee-title">ضمان زافيرا الملكي للمعاينة والدفع عند الاستلام</h3>
+          </div>
+          <p id="lbl-guarantee-desc">نحن واثقون تماماً من جودة وفخامة خياطتنا التقليدية. عند وصول مندوب التوصيل إلى باب منزلكِ، لكِ كامل الحق في فتح الطرد، معاينة خامة المخمل والحرير، والتحقق من دقة خيوط التطريز والفتلة الذهبية قبل تسليم أي مبلغ مالي. ثقتكِ ورضاكِ هما أولويتنا.</p>
+        </div>
+      </section>
+
+      <!-- Cash On Delivery Checkout Form -->
+      <section class="checkout-box" id="checkout-form-section">
+        <div class="checkout-box-title" id="form-heading">🛒 املئي البيانات لتأكيد حجز طلبكِ</div>
+        
+        <!-- Step-by-Step Checkout Guide -->
+        <div class="checkout-steps-guide">
+          <div class="steps-guide-title" id="lbl-steps-title">كيفية الشراء والضمان في 3 خطوات بسيطة:</div>
+          <div class="steps-list">
+            <div class="step-item">
+              <span class="step-number">1</span>
+              <span id="lbl-step-1"><strong>املئي بيانات الشحن:</strong> أدخلي اسمكِ ورقم هاتفكِ وولايتكِ بشكل صحيح لتسجيل الحجز الفوري.</span>
+            </div>
+            <div class="step-item">
+              <span class="step-number">2</span>
+              <span id="lbl-step-2"><strong>الاتصال لتأكيد المقاسات:</strong> سيتصل بكِ خبير المقاسات عبر الهاتف لتأكيد الطول والوزن لضمان فستان ملائم تماماً لجسدكِ.</span>
+            </div>
+            <div class="step-item">
+              <span class="step-number">3</span>
+              <span id="lbl-step-3"><strong>المعاينة والدفع عند الاستلام:</strong> التوصيل مجاني تماماً! يحق لكِ فتح الطرد ومعاينة جودة الخياطة والتطريز قبل الدفع.</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="order-form">
+          <div class="form-group">
+            <label for="customer_name" id="lbl-name">الاسم الكامل *</label>
+            <input type="text" id="customer_name" required placeholder="مثال: أمينة بن عيسى">
+          </div>
+
+          <div class="form-group">
+            <label for="phone" id="lbl-phone">رقم الجوال (الجزائر) *</label>
+            <input type="tel" id="phone" required placeholder="05xxxxxxxx / 06xxxxxxxx" pattern="^0(5|6|7|2)[0-9]{8}$">
+            <span style="font-size: 0.7rem; color: var(--color-gold-liquid);" id="phone-hint">مثال: 0550123456 (10 أرقام)</span>
+          </div>
+
+          <div class="form-group">
+            <label for="alt_phone" id="lbl-alt-phone">رقم جوال بديل (اختياري)</label>
+            <input type="tel" id="alt_phone" placeholder="رقم آخر لضمان سرعة الاتصال">
+          </div>
+
+          <div class="form-group">
+            <label for="city" id="lbl-city">الولاية *</label>
+            <select id="city" required>
+              <option value="" disabled selected id="city-placeholder">-- اختاري ولايتكِ --</option>
+              <option value="أدرار">01. أدرار (Adrar)</option>
+              <option value="الشلف">02. الشلف (Chlef)</option>
+              <option value="الأغواط">03. الأغواط (Laghouat)</option>
+              <option value="أم البواقي">04. أم البواقي (Oum El Bouaghi)</option>
+              <option value="باتنة">05. باتنة (Batna)</option>
+              <option value="بجاية">06. بجاية (Béjaïa)</option>
+              <option value="بسكرة">07. بسكرة (Biskra)</option>
+              <option value="بشار">08. بشار (Béchar)</option>
+              <option value="البليدة">09. البليدة (Blida)</option>
+              <option value="البويرة">10. البويرة (Bouira)</option>
+              <option value="تمنراست">11. تمنراست (Tamanrasset)</option>
+              <option value="تبسة">12. تبسة (Tébessa)</option>
+              <option value="تلمسان">13. تلمسان (Tlemcen)</option>
+              <option value="تيارت">14. تيارت (Tiaret)</option>
+              <option value="تيزي وزو">15. تيزي وزو (Tizi Ouzou)</option>
+              <option value="الجزائر العاصمة">16. الجزائر العاصمة (Alger)</option>
+              <option value="الجلفة">17. الجلفة (Djelfa)</option>
+              <option value="جيجل">18. جيجل (Jijel)</option>
+              <option value="سطيف">19. سطيف (Sétif)</option>
+              <option value="سعيدة">20. سعيدة (Saïda)</option>
+              <option value="سكيكدة">21. سكيكدة (Skikda)</option>
+              <option value="سيدي بلعباس">22. سيدي بلعباس (Sidi Bel Abbès)</option>
+              <option value="عنابة">23. عنابة (Annaba)</option>
+              <option value="قالمة">24. قالمة (Guelma)</option>
+              <option value="قسنطينة">25. قسنطينة (Constantine)</option>
+              <option value="المدية">26. المدية (Médéa)</option>
+              <option value="مستغانم">27. مستغانم (Mostaganem)</option>
+              <option value="المسيلة">28. المسيلة (M'Sila)</option>
+              <option value="معسكر">29. معسكر (Mascara)</option>
+              <option value="ورقلة">30. ورقلة (Ouargla)</option>
+              <option value="وهران">31. وهران (Oran)</option>
+              <option value="البيض">32. البيض (El Bayadh)</option>
+              <option value="إليزي">33. إليزي (Illizi)</option>
+              <option value="برج بوعريريج">34. برج بوعريريج (Bordj Bou Arréridj)</option>
+              <option value="بومرداس">35. بومرداس (Boumerdès)</option>
+              <option value="الطارف">36. الطارف (El Tarf)</option>
+              <option value="تندوف">37. تندوف (Tindouf)</option>
+              <option value="تيسمسيلت">38. تيسمسيلت (Tissemsilt)</option>
+              <option value="الوادي">39. الوادي (El Oued)</option>
+              <option value="خنشلة">40. خنشلة (Khenchela)</option>
+              <option value="سوق أهراس">41. سوق أهراس (Souk Ahras)</option>
+              <option value="تيبازة">42. تيبازة (Tipaza)</option>
+              <option value="ميلة">43. ميلة (Mila)</option>
+              <option value="عين الدفلى">44. عين الدفلى (Aïn Defla)</option>
+              <option value="النعامة">45. النعامة (Naâma)</option>
+              <option value="عين تموشنت">46. عين تموشنت (Aïn Témouchent)</option>
+              <option value="غرداية">47. غرداية (Ghardaïa)</option>
+              <option value="غليزان">48. غليزان (Relizane)</option>
+              <option value="المغير">49. المغير (El M'Ghair)</option>
+              <option value="المنيعة">50. المنيعة (El Meniaa)</option>
+              <option value="أولاد جلال">51. أولاد جلال (Ouled Djellal)</option>
+              <option value="برج باجي مختار">52. برج باجي مختار (Bordj Badji Mokhtar)</option>
+              <option value="بني عباس">53. بني عباس (Béni Abbès)</option>
+              <option value="عين صالح">54. عين صالح (In Salah)</option>
+              <option value="عين قزام">55. عين قزام (In Guezzam)</option>
+              <option value="تقرت">56. تقرت (Touggourt)</option>
+              <option value="جانت">57. جانت (Djanet)</option>
+              <option value="تيميمون">58. تيميمون (Timimoun)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="address" id="lbl-address">عنوان التوصيل الكامل (البلدية، الحي، الشارع) *</label>
+            <input type="text" id="address" required placeholder="مثال: بلدية الأبيار، حي الشوفالي، عمارة 5">
+          </div>
+
+          <!-- Quantity Picker -->
+          <div class="quantity-picker-row">
+            <span style="font-weight: bold;" id="lbl-qty">الكمية</span>
+            <div class="quantity-picker">
+              <button type="button" class="quantity-btn" id="qty-minus">-</button>
+              <span class="quantity-val" id="qty-value">1</span>
+              <button type="button" class="quantity-btn" id="qty-plus">+</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="notes" id="lbl-notes">ملاحظات إضافية للتوصيل (اختياري)</label>
+            <textarea id="notes" rows="2" placeholder="أي تفاصيل تودين إخبار المندوب بها"></textarea>
+          </div>
+
+          <!-- Checkout Submit Button -->
+          <button type="submit" class="cta-button" id="submit-btn">
+            <i class="fa-solid fa-lock"></i>
+            <span id="btn-text">تأكيد حجز الطلب - الدفع عند الاستلام</span>
+          </button>
+        </form>
+      </section>
+
+      <!-- Branded Social Proof (Reviews) -->
+      <section class="landing-reviews-section">
+        <h3 class="reviews-section-title" id="lbl-reviews-title">آراء السيدات اللواتي تألقن بفساتيننا ⭐⭐⭐⭐⭐</h3>
+        <div class="reviews-grid" id="detail-reviews-container">
+          <!-- Reviews rendered dynamically -->
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Sticky Footer CTA for Mobile Scroll -->
+  <div class="sticky-footer-cta" id="sticky-cta-bar" style="display: none;">
+    <button type="button" class="cta-button" id="sticky-btn">
+      <span id="sticky-btn-text">اطلبي الآن</span>
+    </button>
+    <div class="sticky-footer-price">
+      <span class="lbl" id="sticky-total-lbl">السعر الإجمالي</span>
+      <span class="val" id="sticky-total-val">0.00 د.ج</span>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Action -->
+  <div class="whatsapp-bubble" id="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+
+  <!-- Success Overlay Screen -->
+  <div class="auth-overlay" id="success-overlay" style="display: none;">
+    <div class="auth-box">
+      <div class="success-screen">
+        <div class="success-icon">✨</div>
+        <h2 class="luxury-title" style="color: var(--color-gold-liquid); margin-bottom: 12px;" id="success-title">تم استلام طلبكِ بنجاح!</h2>
+        <p style="margin-bottom: 20px;" id="success-msg">شكراً لثقتكِ بـ ZAPHERA. سيقوم فريق خدمة عملاء زافيرا بالتواصل معكِ عبر الهاتف والواتساب لتأكيد المقاسات وتنسيق الشحن السريع.</p>
+        <div style="background: rgba(74, 21, 43, 0.06); border-radius: 8px; padding: 12px; font-size: 0.9rem; margin-bottom: 24px; border: var(--border-glass);" id="success-order-box">
+          رقم الطلب الخاص بكِ: <strong style="color: var(--color-gold-liquid);" id="success-order-id">ZAPH-XXXX</strong>
+        </div>
+        <button type="button" class="cta-button" id="success-close-btn" style="padding: 10px 20px; font-size: 0.95rem;">
+          موافق
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { setupDeferredPixels, trackAddToCart, trackInitiateCheckout, trackPurchase } from '/pixels.js';
+
+    // 1. Initialize Deferred Script Loading
+    setupDeferredPixels();
+
+    // Designer Quotes Database
+    const designerQuotes = {
+      ar: {
+        "emerald-royal-caftan": "القفطان الأخضر الملكي ليس مجرد ثوب، بل هو قطعة فنية مصممة لتجعل كل امرأة تشعر بهيبة ومقام الملكات في أسعد لحظات حياتها.",
+        "royal-blue-karakou": "في هذا الكاراكو، أردت أن أجسد أناقة القصبة العتيقة بأسلوب عصري يناسب ذوق السيدة الراقية التي تعتز بهويتها وجذورها الجزائرية.",
+        "white-bridal-karakou": "البياض الناصع مع خيوط الذهب الخالص في كاراكو العروس يعكس نقاء القلوب وفخامة التراث التي ترافق العروس في خطوتها نحو حياة جديدة.",
+        "burgundy-velvet-caftan": "اخترت اللون الخمري الدافئ والقطيفة الفاخرة لأصنع قفطاناً يمنحكِ حضوراً دافئاً وجذاباً في السهرات العائلية والأفراح.",
+        "chedda-tlemcen-majesty": "الشدة التلمسانية هي فخر غرب الجزائر ورمز ملكي عريق، نسجنا كل خيط فيها بحب لنحفظ تراثاً إنسانياً فريداً لليلة زفافكِ.",
+        "algiers-badroune-elegance": "البدرون العاصمي بقصته الانسيابية والحرير الناعم يمنح العروس حركة مريحة وأناقة متناهية تجمع بين البساطة والرفاهية."
+      },
+      en: {
+        "emerald-royal-caftan": "The Emerald Royal Caftan is not just a dress, but a masterpiece designed to make every woman feel the prestige and majesty of queens.",
+        "royal-blue-karakou": "In this Karakou, I aimed to embody the elegance of the ancient Casbah in a modern style for the sophisticated woman who cherishes her Algerian identity.",
+        "white-bridal-karakou": "The pure white combined with gold thread in the bridal Karakou reflects the purity and luxury of heritage accompanying the bride to her new life.",
+        "burgundy-velvet-caftan": "I chose the warm burgundy and luxury velvet to create a caftan that grants you a warm and appealing presence at family occasions.",
+        "chedda-tlemcen-majesty": "The Tlemcen Chedda is the pride of Western Algeria, we wove every thread with love to preserve a unique human heritage for your wedding night.",
+        "algiers-badroune-elegance": "The Algiers Badroune with its flowing design and soft silk grants the bride easy comfort and ultimate elegance combining simplicity and luxury."
+      }
+    };
+
+    // Customer Reviews Database
+    const reviewsDatabase = {
+      "emerald-royal-caftan": [
+        { name: "سهام ب.", rating: 5, date: "منذ يومين", location: "الجزائر العاصمة", text: "القفطان تحفة حقيقية! التطريز بالفتلة متقن جداً والقطيفة ثقيلة وفخمة. تعاملت مع خبير المقاسات وكان دقيقاً جداً، الفستان جاء على مقاسي تماماً." },
+        { name: "فاطمة الزهراء ك.", rating: 5, date: "منذ 5 أيام", location: "وهران", text: "توصيل سريع وخدمة ممتازة، فتحت الطرد وعاينت الفستان قبل الدفع كما وعدوني. الألوان تماماً مثل الصورة في الموقع." },
+        { name: "مريم د.", rating: 5, date: "منذ أسبوع", location: "سطيف", text: "اشتريت هذا القفطان لحضور عرس أخي، كنت ملكة الحفلة! الجميع يسألني من أين اشتريته. شكراً زافيرا." }
+      ],
+      "royal-blue-karakou": [
+        { name: "ليلى م.", rating: 5, date: "منذ 3 أيام", location: "البليدة", text: "الكاراكو روعة روعة! الأزرق الملكي لونه ساحر وسروال الشلقة حريري انسيابي يجنن. خياطة نظيفة وتطريز متقن." },
+        { name: "رانيا ب.", rating: 5, date: "منذ 6 أيام", location: "قسنطينة", text: "أنصح كل عروس بهذا الكاراكو، يعطي هيبة وجاذبية غير طبيعية. خدمة العملاء سريعة جداً وتأكيد المقاسات سهل العملية." }
+      ],
+      "white-bridal-karakou": [
+        { name: "أمل ح.", rating: 5, date: "منذ يومين", location: "تلمسان", text: "طلبته لخطوبتي وجاء قمة في الروعة، اللون الأبيض مع الذهبي فخامة لا توصف. شكراً لكم على الاحترافية." },
+        { name: "شريفة ع.", rating: 5, date: "منذ 4 أيام", location: "عنابة", text: "أجمل قطعة اشتريتها لزفافي! التطريز ثقيل والخرز يلمع تحت الضوء بشكل رائع. يستحق كل دينار." }
+      ],
+      "burgundy-velvet-caftan": [
+        { name: "نهاد س.", rating: 5, date: "منذ 4 أيام", location: "المدية", text: "اللون الخمري رائع جداً والقطيفة ناعمة ولمعتها تهبل. التوصيل كان مجاني واستلمته خلال 48 ساعة." },
+        { name: "منال ك.", rating: 5, date: "منذ أسبوع", location: "بجاية", text: "خياطة تقليدية حقيقية، تفاصيل العقاد والحزام ممتازة وتصميم مريح جداً في اللبس." }
+      ],
+      "chedda-tlemcen-majesty": [
+        { name: "ياسمين ت.", rating: 5, date: "منذ يومين", location: "تلمسان", text: "الشدة التلمسانية قمة في الفخامة والروعة! التفاصيل مطابقة للشدة التقليدية الأصلية وتاج الجوهر تحفة كاملة." },
+        { name: "أميرة ج.", rating: 5, date: "منذ 5 أيام", location: "سيدي بلعباس", text: "فخورة جداً بارتداء هذه القطعة في زفافي، جودة الحرير والقطيفة ممتازة والتطريز ثقيل ومتقن للغاية." }
+      ],
+      "algiers-badroune-elegance": [
+        { name: "حنان ق.", rating: 5, date: "منذ 3 أيام", location: "الجزائر العاصمة", text: "البدرون خفيف وأنيق جداً، القصة تناسب الجسم وتعطي رشاقة ممتازة. الحرير طبيعي ومريح جداً." },
+        { name: "وسيلة ب.", rating: 5, date: "منذ أسبوع", location: "تيبازة", text: "رائع جداً للاستقبال والسهرات العائلية، القصة مريحة والتوصيل كان سريعاً." }
+      ],
+      "default": [
+        { name: "زبونة زافيرا", rating: 5, date: "منذ يومين", location: "الجزائر", text: "خياطة وتطريز في القمة، تعامل راقي وتوصيل سريع والدفع بعد المعاينة يضمن الثقة الكاملة." }
+      ]
+    };
+
+    // API URL configuration
+    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
+    // App State
+    let currentLang = 'ar';
+    let products = [];
+    let currentProduct = null;
+    let currentQty = 1;
+    let currentBundlePrice = 0;
+    let selectedSize = 'M';
+    let selectedColor = '';
+    let currentImageIndex = 0;
+    let currentSlide = 0;
+    let slideInterval = null;
+
+    // UI Elements
+    const logoBtn = document.getElementById('logo-btn');
+    const productsListGrid = document.getElementById('products-list-grid');
+    const homeView = document.getElementById('home-view');
+    const detailView = document.getElementById('detail-view');
+    const stickyCtaBar = document.getElementById('sticky-cta-bar');
+    const stickyTotalVal = document.getElementById('sticky-total-val');
+    const qtyValue = document.getElementById('qty-value');
+    const qtyMinus = document.getElementById('qty-minus');
+    const qtyPlus = document.getElementById('qty-plus');
+    const orderForm = document.getElementById('order-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const stickyBtn = document.getElementById('sticky-btn');
+    const successOverlay = document.getElementById('success-overlay');
+    const successOrderId = document.getElementById('success-order-id');
+    const successCloseBtn = document.getElementById('success-close-btn');
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+    const langToggle = document.getElementById('lang-toggle');
+
+    // Multi-Language Strings
+    const translations = {
+      ar: {
+        promo: "✨ توصيل سريع ومجاني لكافة الولايات الجزائرية اليوم فقط ✨",
+        tagline: "HAUTE COUTURE ALGERIENNE",
+        active: "128 متصفحة الآن من الجزائر العاصمة",
+        stock: "متبقي 5 قطع فقط في المخزن للتوصيل الفوري",
+        saving: "خصم لفترة محدودة",
+        allCollections: "كل المجموعات",
+        originalPrice: "السعر الأصلي",
+        currentPrice: "السعر الحالي",
+        currency: "د.ج",
+        viewDetails: "عرض التفاصيل",
+        backToStore: "← العودة للمتجر",
+        selectSize: "اختاري المقاس المناسب *",
+        selectColor: "اللون",
+        qty: "الكمية",
+        formTitle: "🛒 املئي البيانات لتأكيد حجز طلبكِ",
+        name: "الاسم الكامل *",
+        namePlh: "مثال: أمينة بن عيسى",
+        phone: "رقم الجوال (الجزائر) *",
+        phonePlh: "05xxxxxxxx / 06xxxxxxxx",
+        altPhone: "رقم جوال بديل (اختياري)",
+        city: "الولاية *",
+        cityPlh: "-- اختاري ولايتكِ --",
+        address: "عنوان التوصيل الكامل (البلدية، الحي، الشارع) *",
+        addressPlh: "مثال: بلدية الأبيار، حي الشوفالي، عمارة 5",
+        notes: "ملاحظات إضافية للتوصيل (اختياري)",
+        btnText: "تأكيد حجز الطلب - الدفع عند الاستلام",
+        stickyBtn: "اطلبي الآن",
+        stickyTotal: "السعر الإجمالي",
+        successTitle: "تم استلام طلبكِ بنجاح!",
+        successMsg: "شكراً لثقتكِ بـ ZAPHERA. سيقوم فريق خدمة عملاء زافيرا بالتواصل معكِ عبر الهاتف والواتساب لتأكيد المقاسات وتنسيق الشحن السريع.",
+        close: "موافق",
+        shippingTitle: "توصيل سريع ومجاني",
+        shippingDesc: "لكافة الولايات الجزائرية",
+        codTitle: "الدفع عند الاستلام",
+        codDesc: "عاين جودة الفستان قبل الدفع",
+        qualityTitle: "جودة مضمونة 100%",
+        qualityDesc: "خياطة تقليدية يدوية راقية",
+        inStock: "متوفر في المخزن",
+        outOfStock: "غير متوفر مؤقتاً",
+        storyTitle: "قصة زافيرا - أصالة التراث وعراقة التفاصيل",
+        storyText1: "في متجر زافيرا، نؤمن بأن كل قفطان وكاراكو جزائري ليس مجرد قطعة ملابس، بل هو إرث وتاريخ يحكي قروناً من الحضارة والجمال. نحن ملتزمون بالمحافظة على تراثنا الجزائر العريق من خلال خياطة وتطريز كل قطعة يدوياً بخيوط 'الفتلة' و'المجبود' الذهبية الفاخرة على أرقى أنواع القطيفة والحرير الطبيعي.",
+        storyText2: "تصاميمنا الفخمة مصممة بعناية فائقة للأعراس، الخطوبة، والمناسبات السعيدة لكي تتألقي كملكة فخورة بأصالتها، مع لمسة عصرية تواكب أحدث خطوط الموضة الراقية.",
+        analysisTitle: "دليل التراث - كيف يُصنع الجمال الأصيل؟",
+        karakouHeader: "الكاراكو العاصمي التقليدي",
+        karakouBody: "تحفة فنية تجمع بين سترة مخملية ('فيست') مطرزة يدوياً بالفتلة العاصمية على القطيفة الفاخرة بنقوش مستوحاة من التاريخ العاصمي، مقترنة مع 'سروال الشلقة' الحريري المنسدل والمفتوح من الجانبين أو 'سروال المدور' العريض لتجسيد قمة الأنوثة الجزائرية.",
+        caftanHeader: "القفطان الجزائري الملكي",
+        caftanBody: "رداء حريري أو مخملي طويل مفتوح من الأمام، مطرز بالكامل بنقوش المجبود والفتلة المذهبة على أقمشة البروكار أو القطيفة الثقيلة، ويقفل بـ 'العقاد' التقليدية وحزام 'المحزمة' الذهبي المطرز لإبراز خصر المرأة ومنحها قامة ملكية لا تضاهى.",
+        faqTitle: "الأسئلة الشائعة",
+        faqQ1: "كيف أختار المقاس المناسب لجسدي؟",
+        faqA1: "يمكنكِ اختيار مقاسك المعتاد بناءً على جدول المقاسات. عند تأكيد الطلب، سيتواصل معكِ خبير القياسات لدينا عبر الواتساب لتأكيد طولكِ، وزنكِ، وعرض الكتفين لضمان أن القطعة ستلائم جسدكِ تماماً وكأنها مصممة لكِ خصيصاً.",
+        faqQ2: "ما هي مدة وكلفة التوصيل في الجزائر؟",
+        faqA2: "التوصيل سريع ومجاني بالكامل لجميع الولايات الجزائرية (58 ولاية). يستغرق التوصيل إلى الجزائر العاصمة، البليدة، وتيبازة حوالي 24 ساعة، وباقي الولايات من 48 إلى 72 ساعة كحد أقصى.",
+        faqQ3: "هل يمكنني فحص ومعاينة الفستان قبل الدفع؟",
+        faqA3: "نعم، بالتأكيد! نحن نعتمد نظام الدفع عند الاستلام (COD). يمكنكِ فتح الطرد، معاينة خامة المخمل والحرير ودقة التطريز والفتلة قبل تسليم المبلغ للمندوب لضمان رضاكِ الكامل وثقتكِ بجودتنا.",
+        faqQ4: "كيف أحافظ على القطيفة والتطريز الذهبي (الفتلة)؟",
+        faqA4: "للحفاظ على الخيوط الذهبية الحساسة ولمعان القطيفة الفاخرة، نوصي بشدة بتنظيف الفستان عن طريق التنظيف الجاف فقط (Dry Clean) وتجنب الكي المباشر على خيوط التطريز لمنع تلفها.",
+        storyCardTitle: "👑 قصة التصميم",
+        fabricCardTitle: "🧵 الأقمشة والخامات",
+        embroideryCardTitle: "✨ تفاصيل التطريز",
+        sizeHint: "✨ لا تقلقي بشأن المقاس، خبير القياسات لدينا سيتواصل معكِ بعد الطلب عبر الهاتف والواتساب لتأكيد القياسات بدقة وضمان تفصيل مثالي لجسدكِ!",
+        stepsTitle: "كيفية الشراء والضمان في 3 خطوات بسيطة:",
+        step1: "<strong>املئي بيانات الشحن:</strong> أدخلي اسمكِ ورقم هاتفكِ وولايتكِ بشكل صحيح لتسجيل الحجز الفوري.",
+        step2: "<strong>الاتصال لتأكيد المقاسات:</strong> سيتصل بكِ خبير المقاسات عبر الهاتف لتأكيد الطول والوزن لضمان فستان ملائم تماماً لجسدكِ.",
+        step3: "<strong>المعاينة والدفع عند الاستلام:</strong> التوصيل مجاني تماماً! يحق لكِ فتح الطرد ومعاينة جودة الخياطة والتطريز قبل الدفع.",
+        reviewsTitle: "آراء السيدات اللواتي تألقن بفساتيننا ⭐⭐⭐⭐⭐",
+        quickBuyText: "احجزي فستانكِ الآن - الدفع عند الاستلام",
+        designerSig: "— مصممة زافيرا",
+        luxuryBadge: "تفصيل يدوي فاخر"
+      },
+      en: {
+        promo: "✨ FREE RAPID SHIPPING TO ALL ALGERIAN WILAYAS TODAY ONLY ✨",
+        tagline: "HAUTE COUTURE ALGERIENNE",
+        active: "128 browsing now in Algiers",
+        stock: "Only 5 pieces left in stock for immediate delivery",
+        saving: "Limited time discount",
+        allCollections: "All Collections",
+        originalPrice: "Original Price",
+        currentPrice: "Current Price",
+        currency: "DZD",
+        viewDetails: "View Details",
+        backToStore: "← Back to Store",
+        selectSize: "Select Appropriate Size *",
+        selectColor: "Color",
+        qty: "Quantity",
+        formTitle: "🛒 Enter details to confirm booking",
+        name: "Full Name *",
+        namePlh: "e.g. Amina Ben Aissa",
+        phone: "Mobile Number (Algeria) *",
+        phonePlh: "05xxxxxxxx / 06xxxxxxxx",
+        altPhone: "Alternative Number (Optional)",
+        city: "Wilaya *",
+        cityPlh: "-- Select your Wilaya --",
+        address: "Full Delivery Address (Municipality, District, Street) *",
+        addressPlh: "e.g. El Biar Municipality, Chevalley District, Bldg 5",
+        notes: "Additional Delivery Notes (Optional)",
+        btnText: "Confirm Order - Cash on Delivery",
+        stickyBtn: "Order Now",
+        stickyTotal: "Total Price",
+        successTitle: "Order Booked Successfully!",
+        successMsg: "Thank you for trusting ZAPHERA. Our customer service team will contact you via phone/WhatsApp to confirm measurements and coordinate rapid shipping.",
+        close: "OK",
+        shippingTitle: "Free & Rapid Shipping",
+        shippingDesc: "To all Algerian Wilayas",
+        codTitle: "Cash on Delivery",
+        codDesc: "Inspect the dress quality before paying",
+        qualityTitle: "100% Guaranteed Quality",
+        qualityDesc: "Premium handcrafted traditional tailoring",
+        inStock: "In Stock",
+        outOfStock: "Temporarily Out of Stock",
+        storyTitle: "ZAPHERA Story - Heritage & Traditional Details",
+        storyText1: "At ZAPHERA, we believe that each Algerian Caftan and Karakou is not just clothing, but a legacy and history reflecting centuries of civilization and elegance. We are committed to preserving our Algerian heritage by hand-tailoring and embroidering every piece using traditional golden 'Fetla' and 'Majboud' gold thread on premium velvet and natural silk.",
+        storyText2: "Our luxury garments are crafted specifically for weddings, engagements, and special family gatherings, allowing you to shine like a queen proud of her roots, with a modern twist.",
+        analysisTitle: "Heritage Guide - How Authentic Beauty is Made",
+        karakouHeader: "Traditional Algiers Karakou",
+        karakouBody: "A masterpiece combining a premium velvet jacket hand-embroidered with classic Algiers Fetla gold patterns, paired with flowing natural silk Chelka trousers or a full rounded skirt to showcase traditional Algerian femininity.",
+        caftanHeader: "Royal Algerian Caftan",
+        caftanBody: "A long silk or velvet robe open from the front, fully embroidered with Majboud and gold thread on heavy velvet or brocade fabrics. It features traditional 'Aakad' buttons and a hand-crafted gold belt ('Mhizma') to structure the waist.",
+        faqTitle: "Frequently Asked Questions",
+        faqQ1: "How do I choose the correct size?",
+        faqA1: "Choose your regular size based on our chart. After ordering, our sizing specialist will contact you on WhatsApp to double-check your height, weight, and shoulder width to ensure a perfect fit.",
+        faqQ2: "What is the shipping cost and duration in Algeria?",
+        faqA2: "Shipping is 100% free and fast to all 58 Algerian Wilayas. Delivery to Algiers, Blida, and Tipaza takes 24 hours, while other provinces take 48 to 72 hours maximum.",
+        faqQ3: "Can I inspect the dress before paying the courier?",
+        faqA3: "Yes, definitely! We offer Cash on Delivery (COD). You can open the package and inspect the velvet quality, silk, and embroidery stitch work before paying the courier to ensure complete satisfaction.",
+        faqQ4: "How do I take care of the velvet and gold embroidery?",
+        faqA4: "To preserve the delicate gold threads (Fetla) and premium velvet sheen, we highly recommend dry cleaning only, and avoiding direct ironing over the embroidered patterns.",
+        storyCardTitle: "👑 Design Story",
+        fabricCardTitle: "🧵 Fabrics & Materials",
+        embroideryCardTitle: "✨ Embroidery Craftsmanship",
+        sizeHint: "✨ Don't worry about size! Our sizing specialist will contact you via phone/WhatsApp after ordering to confirm measurements and ensure a perfect custom fit.",
+        stepsTitle: "How to purchase & guarantee in 3 simple steps:",
+        step1: "<strong>Enter Delivery Details:</strong> Fill in your name, phone, and wilaya to register your immediate booking.",
+        step2: "<strong>Sizing Confirmation Call:</strong> Our specialist will call you to verify height and weight for a custom fit.",
+        step3: "<strong>Inspect & Cash on Delivery:</strong> Free shipping! You have the right to open the package and inspect quality before paying.",
+        reviewsTitle: "Reviews of Women Who Shined in Our Dresses ⭐⭐⭐⭐⭐",
+        quickBuyText: "Book Your Dress Now - Cash on Delivery",
+        designerSig: "— ZAPHERA Designer",
+        luxuryBadge: "Premium Handcrafted"
+      }
+    };
+
+    // Hero Slider functions
+    window.moveSlide = (direction) => {
+      const slides = document.querySelectorAll('.slide-item');
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      updateSliderDots();
+    };
+
+    window.goToSlide = (slideIndex) => {
+      const slides = document.querySelectorAll('.slide-item');
+      slides[currentSlide].classList.remove('active');
+      currentSlide = slideIndex;
+      slides[currentSlide].classList.add('active');
+      updateSliderDots();
+    };
+
+    function updateSliderDots() {
+      const dots = document.querySelectorAll('.slider-dot');
+      dots.forEach((dot, idx) => {
+        if (idx === currentSlide) dot.classList.add('active');
+        else dot.classList.remove('active');
+      });
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      slideInterval = setInterval(() => {
+        moveSlide(1);
+      }, 5000);
+    }
+
+    function stopAutoSlide() {
+      if (slideInterval) clearInterval(slideInterval);
+    }
+
+    // Scroll to catalog section helper
+    window.scrollToCatalog = () => {
+      const element = document.getElementById('catalog-section');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    // FAQ Accordion logic
+    function setupFaqAccordion() {
+      const questions = document.querySelectorAll('.faq-question');
+      questions.forEach(q => {
+        q.addEventListener('click', () => {
+          const item = q.parentElement;
+          const isActive = item.classList.contains('active');
+          
+          // Collapse all others
+          document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+          
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      });
+    }
+
+    // Initial Data Fetch
+    async function initApp() {
+      try {
+        // Fetch products
+        const productsRes = await fetch(`${API_URL}/api/products`).then(res => res.json());
+
+        if (productsRes.success) {
+          products = productsRes.products;
+          renderProductsGrid();
+        }
+
+        // Handle URL Hash navigation
+        handleHashRoute();
+        setupFaqAccordion();
+        startAutoSlide();
+
+      } catch (err) {
+        console.error('Initialization error:', err);
+        productsListGrid.innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #ff5252;">
+            <i class="fa-solid fa-circle-exclamation" style="font-size: 2rem; margin-bottom: 12px;"></i>
+            <p>${currentLang === 'ar' ? 'فشل الاتصال بالخادم. يرجى المحاولة لاحقاً.' : 'Connection to server failed. Please try again later.'}</p>
+          </div>
+        `;
+      }
+    }
+
+    // Render products grid
+    function renderProductsGrid() {
+      if (products.length === 0) {
+        productsListGrid.innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--color-text-muted);">
+            <i class="fa-regular fa-folder-open" style="font-size: 2.5rem; margin-bottom: 12px; display:block;"></i>
+            <p>${currentLang === 'ar' ? 'لا توجد منتجات متوفرة حالياً.' : 'No products available.'}</p>
+          </div>
+        `;
+        return;
+      }
+
+      productsListGrid.innerHTML = products.map(p => {
+        const title = currentLang === 'ar' ? p.name_ar : p.name_en;
+        const currencySymbol = currentLang === 'ar' ? 'د.ج' : 'DZD';
+        const mainImage = p.image_url.startsWith('http') || p.image_url.startsWith('/') 
+          ? p.image_url 
+          : `${API_URL}${p.image_url}`;
+
+        return `
+          <div class="product-grid-card">
+            ${p.is_featured ? `<span class="product-grid-badge">${currentLang === 'ar' ? 'ملكي' : 'Royal'}</span>` : ''}
+            <img class="product-grid-image" src="${mainImage}" alt="${title}" loading="lazy">
+            <div class="product-grid-content">
+              <div class="product-grid-title">${title}</div>
+              <div class="product-grid-pricing">
+                <span class="product-grid-price-new">${parseFloat(p.price).toLocaleString()} ${currencySymbol}</span>
+                ${p.old_price ? `<span class="product-grid-price-old">${parseFloat(p.old_price).toLocaleString()} ${currencySymbol}</span>` : ''}
+              </div>
+              <button class="product-grid-btn" onclick="window.navigateToProduct('${p.slug}')">
+                ${currentLang === 'ar' ? translations.ar.viewDetails : translations.en.viewDetails}
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Route transitions
+    window.navigateToProduct = (slug) => {
+      window.location.hash = `product/${slug}`;
+    };
+
+    window.navigateToHome = () => {
+      window.location.hash = '';
+    };
+
+    logoBtn.addEventListener('click', () => {
+      navigateToHome();
+    });
+
+    // Handle SPA Routing via hash
+    function handleHashRoute() {
+      const hash = window.location.hash;
+      if (hash.startsWith('#product/')) {
+        stopAutoSlide();
+        const slug = hash.replace('#product/', '');
+        const found = products.find(p => p.slug === slug);
+        if (found) {
+          openProductDetails(found);
+        } else {
+          showHomeView();
+        }
+      } else {
+        showHomeView();
+        startAutoSlide();
+      }
+    }
+
+    window.addEventListener('hashchange', handleHashRoute);
+
+    // Show Home layout
+    function showHomeView() {
+      currentProduct = null;
+      homeView.style.display = 'block';
+      detailView.style.display = 'none';
+      stickyCtaBar.style.display = 'none';
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    // Render reviews dynamically
+    function renderProductReviews(slug) {
+      const container = document.getElementById('detail-reviews-container');
+      if (!container) return;
+
+      const list = reviewsDatabase[slug] || reviewsDatabase['default'];
+      
+      container.innerHTML = list.map(rev => {
+        let starsHtml = '';
+        for (let i = 0; i < 5; i++) {
+          starsHtml += `<i class="fa-solid fa-star" style="color: var(--color-gold-liquid); font-size: 0.85rem;"></i>`;
+        }
+
+        return `
+          <div class="landing-review-card">
+            <div class="review-header">
+              <div class="review-user-info">
+                <span class="review-avatar">${rev.name.charAt(0)}</span>
+                <div>
+                  <strong class="review-author">${rev.name}</strong>
+                  <span class="review-badge"><i class="fa-solid fa-circle-check"></i> ${currentLang === 'ar' ? 'زبونة مؤكدة' : 'Verified Buyer'}</span>
+                </div>
+              </div>
+              <div class="review-meta">
+                <span class="review-location"><i class="fa-solid fa-location-dot"></i> ${rev.location}</span>
+                <span class="review-date">${rev.date}</span>
+              </div>
+            </div>
+            <div class="review-rating">${starsHtml}</div>
+            <p class="review-comment">${rev.text}</p>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Show Product details
+    function openProductDetails(product) {
+      currentProduct = product;
+      currentQty = 1;
+      selectedSize = product.sizes && product.sizes.length > 0 ? product.sizes[0] : 'M';
+      selectedColor = product.colors && product.colors.length > 0 ? product.colors[0] : '';
+      currentImageIndex = 0;
+
+      // Toggle views
+      homeView.style.display = 'none';
+      detailView.style.display = 'block';
+      stickyCtaBar.style.display = 'flex';
+
+      // Update contents
+      const title = currentLang === 'ar' ? product.name_ar : product.name_en;
+      const desc = currentLang === 'ar' ? product.description_ar : product.description_en;
+      const currency = currentLang === 'ar' ? 'د.ج' : 'DZD';
+
+      document.getElementById('detail-title').innerText = title;
+      document.getElementById('detail-desc').innerText = desc;
+
+      // Populate heritage cards
+      const designStory = currentLang === 'ar' ? (product.design_story_ar || '') : (product.design_story_en || '');
+      const fabric = currentLang === 'ar' ? (product.fabric_ar || '') : (product.fabric_en || '');
+      const embroidery = currentLang === 'ar' ? (product.embroidery_ar || '') : (product.embroidery_en || '');
+
+      // Populate Designer Quote
+      const designerQuote = designerQuotes[currentLang][product.slug] || 
+        (currentLang === 'ar' ? "تصميم تقليدي فاخر مصمم بأدق التفاصيل واللمسات الذهبية." : "A luxury traditional design crafted with precision and golden accents.");
+      document.getElementById('detail-design-quote').innerText = designerQuote;
+
+      const storyCard = document.getElementById('detail-story-card');
+      if (designStory) {
+        document.getElementById('detail-design-story').innerText = designStory;
+        storyCard.style.display = 'block';
+      } else {
+        storyCard.style.display = 'none';
+      }
+
+      const fabricCard = document.getElementById('detail-fabric-card');
+      if (fabric) {
+        document.getElementById('detail-fabric').innerText = fabric;
+        fabricCard.style.display = 'block';
+      } else {
+        fabricCard.style.display = 'none';
+      }
+
+      const embroideryCard = document.getElementById('detail-embroidery-card');
+      if (embroidery) {
+        document.getElementById('detail-embroidery').innerText = embroidery;
+        embroideryCard.style.display = 'block';
+      } else {
+        embroideryCard.style.display = 'none';
+      }
+
+      document.getElementById('detail-price-new').innerText = `${parseFloat(product.price).toLocaleString()} ${currency}`;
+      
+      const oldPriceEl = document.getElementById('detail-price-old');
+      const discountTag = document.getElementById('detail-discount-tag');
+      if (product.old_price) {
+        oldPriceEl.innerText = `${parseFloat(product.old_price).toLocaleString()} ${currency}`;
+        oldPriceEl.style.display = 'inline';
+        const diff = product.old_price - product.price;
+        discountTag.innerText = currentLang === 'ar' ? `وفّرنا لكِ ${diff.toFixed(0)} د.ج` : `Saved ${diff.toFixed(0)} ${currency}`;
+        discountTag.style.display = 'inline';
+      } else {
+        oldPriceEl.style.display = 'none';
+        discountTag.style.display = 'none';
+      }
+
+      // Stock status
+      const stockBadge = document.getElementById('detail-stock-badge');
+      if (product.in_stock) {
+        stockBadge.innerText = currentLang === 'ar' ? translations.ar.inStock : translations.en.inStock;
+        stockBadge.className = "stock-badge stock-in";
+        submitBtn.disabled = false;
+        stickyBtn.disabled = false;
+      } else {
+        stockBadge.innerText = currentLang === 'ar' ? translations.ar.outOfStock : translations.en.outOfStock;
+        stockBadge.className = "stock-badge stock-out";
+        submitBtn.disabled = true;
+        stickyBtn.disabled = true;
+      }
+
+      // Set Main Image
+      const mainImage = product.image_url.startsWith('http') || product.image_url.startsWith('/') 
+        ? product.image_url 
+        : `${API_URL}${product.image_url}`;
+      
+      const mainImgEl = document.getElementById('detail-main-image');
+      mainImgEl.src = mainImage;
+      mainImgEl.alt = title;
+
+      // Gallery Dots
+      const dotsEl = document.getElementById('detail-gallery-dots');
+      const imagesArr = product.images && product.images.length > 0 ? product.images : [product.image_url];
+      if (imagesArr.length > 1) {
+        dotsEl.innerHTML = imagesArr.map((img, idx) => `
+          <div class="gallery-dot ${idx === 0 ? 'active' : ''}" onclick="window.switchGalleryImage(${idx})"></div>
+        `).join('');
+      } else {
+        dotsEl.innerHTML = '';
+      }
+
+      // Sizing options
+      const sizeSection = document.getElementById('detail-size-section');
+      const sizesContainer = document.getElementById('detail-sizes');
+      if (product.sizes && product.sizes.length > 0) {
+        sizeSection.style.display = 'block';
+        sizesContainer.innerHTML = product.sizes.map(size => `
+          <button type="button" class="size-btn ${size === selectedSize ? 'active' : ''}" onclick="window.selectSize('${size}')">${size}</button>
+        `).join('');
+      } else {
+        sizeSection.style.display = 'none';
+      }
+
+      // Color options
+      const colorSection = document.getElementById('detail-color-section');
+      const colorsContainer = document.getElementById('detail-colors');
+      if (product.colors && product.colors.length > 0) {
+        colorSection.style.display = 'block';
+        colorsContainer.innerHTML = product.colors.map(color => `
+          <button type="button" class="color-pill ${color === selectedColor ? 'active' : ''}" onclick="window.selectColor('${color}')">${color}</button>
+        `).join('');
+      } else {
+        colorSection.style.display = 'none';
+      }
+
+      // Render product reviews
+      renderProductReviews(product.slug);
+
+      // Render bundle options
+      renderBundleOptions(parseFloat(product.price));
+
+      // Scroll and reset state
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      updatePricing();
+      checkoutFired = false;
+    }
+
+    // Switch gallery image
+    window.switchGalleryImage = (idx) => {
+      if (!currentProduct) return;
+      const imagesArr = currentProduct.images && currentProduct.images.length > 0 ? currentProduct.images : [currentProduct.image_url];
+      if (idx >= 0 && idx < imagesArr.length) {
+        currentImageIndex = idx;
+        const nextImg = imagesArr[idx].startsWith('http') || imagesArr[idx].startsWith('/') 
+          ? imagesArr[idx] 
+          : `${API_URL}${imagesArr[idx]}`;
+        
+        document.getElementById('detail-main-image').src = nextImg;
+        
+        // Update dots
+        const dots = document.querySelectorAll('.gallery-dot');
+        dots.forEach((dot, dIdx) => {
+          if (dIdx === idx) dot.classList.add('active');
+          else dot.classList.remove('active');
+        });
+      }
+    };
+
+    // Option selectors
+    window.selectSize = (size) => {
+      selectedSize = size;
+      const sizeBtns = document.querySelectorAll('.size-btn');
+      sizeBtns.forEach(btn => {
+        if (btn.innerText === size) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+    };
+
+    window.selectColor = (color) => {
+      selectedColor = color;
+      const colorPills = document.querySelectorAll('.color-pill');
+      colorPills.forEach(pill => {
+        if (pill.innerText === color) pill.classList.add('active');
+        else pill.classList.remove('active');
+      });
+    };
+
+    // Update Totals
+    function updatePricing() {
+      if (!currentProduct) return;
+      const currency = currentLang === 'ar' ? 'د.ج' : 'DZD';
+      
+      // Calculate discounted pricing based on currentQty
+      let discount = 0;
+      if (currentQty === 2) discount = 0.15;
+      else if (currentQty >= 3) discount = 0.20;
+      
+      const regularPrice = currentProduct.price * currentQty;
+      const total = regularPrice * (1 - discount);
+      currentBundlePrice = total;
+      
+      qtyValue.innerText = currentQty;
+      
+      // Update global pricing display
+      document.getElementById('detail-price-new').innerText = `${total.toLocaleString()} ${currency}`;
+      
+      const oldPriceEl = document.getElementById('detail-price-old');
+      const discountTag = document.getElementById('detail-discount-tag');
+      
+      if (currentQty > 1) {
+        if (oldPriceEl) {
+          oldPriceEl.innerText = `${regularPrice.toLocaleString()} ${currency}`;
+          oldPriceEl.style.display = 'inline';
+        }
+        if (discountTag) {
+          const diff = regularPrice - total;
+          discountTag.innerText = currentLang === 'ar' ? `وفّرتِ ${diff.toLocaleString()} د.ج` : `Saved ${diff.toLocaleString()} ${currency}`;
+          discountTag.style.display = 'inline';
+        }
+      } else {
+        if (currentProduct.old_price) {
+          if (oldPriceEl) {
+            oldPriceEl.innerText = `${parseFloat(currentProduct.old_price).toLocaleString()} ${currency}`;
+            oldPriceEl.style.display = 'inline';
+          }
+          if (discountTag) {
+            const diff = currentProduct.old_price - currentProduct.price;
+            discountTag.innerText = currentLang === 'ar' ? `وفّرنا لكِ ${diff.toLocaleString()} د.ج` : `Saved ${diff.toLocaleString()} ${currency}`;
+            discountTag.style.display = 'inline';
+          }
+        } else {
+          if (oldPriceEl) oldPriceEl.style.display = 'none';
+          if (discountTag) discountTag.style.display = 'none';
+        }
+      }
+      
+      // Highlight matching bundle option card
+      const cards = document.querySelectorAll('.bundle-option-card');
+      cards.forEach(card => {
+        const cardQty = parseInt(card.dataset.qty);
+        if (cardQty === currentQty || (cardQty === 3 && currentQty > 3)) {
+          card.classList.add('active');
+          const radio = card.querySelector('input[type="radio"]');
+          if (radio) radio.checked = true;
+        } else {
+          card.classList.remove('active');
+          const radio = card.querySelector('input[type="radio"]');
+          if (radio) radio.checked = false;
+        }
+      });
+      
+      // Sync sticky CTA pricing
+      if (stickyTotalVal) {
+        stickyTotalVal.innerText = `${total.toLocaleString()} ${currency}`;
+      }
+    }
+
+    // Dynamic Bundle Options Renderer
+    function renderBundleOptions(basePrice) {
+      const container = document.getElementById('detail-bundle-options');
+      if (!container) return;
+      
+      const currency = currentLang === 'ar' ? 'د.ج' : 'DZD';
+      
+      // 1 Piece
+      const p1Price = basePrice;
+      const p1Title = currentLang === 'ar' ? 'قطعة واحدة (تفصيل مخصص)' : '1 Costume (Custom Tailored)';
+      const p1Desc = currentLang === 'ar' ? 'تفصيل مخصص بالكامل حسب مقاسكِ' : 'Fully custom tailored to your size';
+      
+      // 2 Pieces
+      const p2Price = basePrice * 2 * 0.85;
+      const p2Title = currentLang === 'ar' ? 'قطعتين (خصم 15% - عرض الشقيقات)' : '2 Costumes (15% Off - Sisters Offer)';
+      const p2Desc = currentLang === 'ar' ? 'احصلي على فستانين بتطريز فاخر لكِ ولشقيقتكِ' : 'Get two luxury embroidered dresses';
+      const p2Badge = currentLang === 'ar' ? 'الأكثر طلباً 🔥' : 'Best Seller 🔥';
+      
+      // 3 Pieces
+      const p3Price = basePrice * 3 * 0.80;
+      const p3Title = currentLang === 'ar' ? '3 قطع (خصم 20% - المجموعة الملكية)' : '3 Costumes (20% Off - Royal Set)';
+      const p3Desc = currentLang === 'ar' ? 'تجهيز كامل للعروس مع وشاح مطرز مجاناً' : 'Complete bridal set with a free gift';
+      const p3Badge = currentLang === 'ar' ? 'أكبر توفير 💎' : 'Best Value 💎';
+      
+      container.innerHTML = `
+        <div class="bundle-option-card active" data-qty="1" onclick="window.selectBundle(1, ${p1Price})">
+          <div class="bundle-card-header">
+            <div class="bundle-radio-wrapper">
+              <input type="radio" name="bundle_selection" id="bundle_1" checked>
+              <label for="bundle_1">
+                <span class="bundle-title">${p1Title}</span>
+              </label>
+            </div>
+            <div class="bundle-price-wrapper">
+              <span class="bundle-price">${p1Price.toLocaleString()} ${currency}</span>
+            </div>
+          </div>
+          <div class="bundle-desc">${p1Desc}</div>
+        </div>
+        
+        <div class="bundle-option-card" data-qty="2" onclick="window.selectBundle(2, ${p2Price})">
+          <div class="bundle-badge-top">${p2Badge}</div>
+          <div class="bundle-card-header">
+            <div class="bundle-radio-wrapper">
+              <input type="radio" name="bundle_selection" id="bundle_2">
+              <label for="bundle_2">
+                <span class="bundle-title">${p2Title}</span>
+              </label>
+            </div>
+            <div class="bundle-price-wrapper">
+              <span class="bundle-price">${p2Price.toLocaleString()} ${currency}</span>
+              <span class="bundle-old-price">${(basePrice * 2).toLocaleString()} ${currency}</span>
+            </div>
+          </div>
+          <div class="bundle-desc">${p2Desc}</div>
+        </div>
+        
+        <div class="bundle-option-card" data-qty="3" onclick="window.selectBundle(3, ${p3Price})">
+          <div class="bundle-badge-top">${p3Badge}</div>
+          <div class="bundle-card-header">
+            <div class="bundle-radio-wrapper">
+              <input type="radio" name="bundle_selection" id="bundle_3">
+              <label for="bundle_3">
+                <span class="bundle-title">${p3Title}</span>
+              </label>
+            </div>
+            <div class="bundle-price-wrapper">
+              <span class="bundle-price">${p3Price.toLocaleString()} ${currency}</span>
+              <span class="bundle-old-price">${(basePrice * 3).toLocaleString()} ${currency}</span>
+            </div>
+          </div>
+          <div class="bundle-desc">${p3Desc}</div>
+        </div>
+      `;
+    }
+
+    // Select Bundle trigger from cards
+    window.selectBundle = (qty, totalPrice) => {
+      currentQty = qty;
+      currentBundlePrice = totalPrice;
+      updatePricing();
+      
+      if (currentProduct) {
+        const title = currentLang === 'ar' ? currentProduct.name_ar : currentProduct.name_en;
+        trackAddToCart(currentProduct.slug, totalPrice, title);
+      }
+    };
+
+    // Quantity actions
+    qtyPlus.addEventListener('click', () => {
+      if (!currentProduct) return;
+      currentQty++;
+      updatePricing();
+      
+      const title = currentLang === 'ar' ? currentProduct.name_ar : currentProduct.name_en;
+      trackAddToCart(currentProduct.slug, currentBundlePrice, title);
+    });
+
+    qtyMinus.addEventListener('click', () => {
+      if (currentQty > 1) {
+        currentQty--;
+        updatePricing();
+      }
+    });
+
+    // Form Checkout trigger
+    let checkoutFired = false;
+    orderForm.querySelectorAll('input, select, textarea').forEach(input => {
+      input.addEventListener('focus', () => {
+        if (!checkoutFired && currentProduct) {
+          const title = currentLang === 'ar' ? currentProduct.name_ar : currentProduct.name_en;
+          trackInitiateCheckout(currentProduct.slug, currentBundlePrice, title);
+          checkoutFired = true;
+        }
+      });
+    });
+
+    // Sticky Scroll Action
+    stickyBtn.addEventListener('click', () => {
+      document.getElementById('checkout-form-section').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Support bubble Whatsapp integration
+    whatsappBtn.addEventListener('click', () => {
+      let waMsg = "مرحباً زافيرا، أود الاستفسار عن التشكيلة الفاخرة للعرائس والمناسبات الجزائرية.";
+      if (currentProduct) {
+        const title = currentLang === 'ar' ? currentProduct.name_ar : currentProduct.name_en;
+        waMsg = `مرحباً زافيرا، أريد الاستفسار عن: ${title}`;
+      }
+      window.open(`https://wa.me/213500000000?text=${encodeURIComponent(waMsg)}`, '_blank');
+    });
+
+    // Form Submission for Order Checkout
+    orderForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!currentProduct) return;
+
+      const name = document.getElementById('customer_name').value;
+      const phone = document.getElementById('phone').value;
+      const altPhone = document.getElementById('alt_phone').value;
+      const city = document.getElementById('city').value;
+      const address = document.getElementById('address').value;
+      const notes = document.getElementById('notes').value;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> ${currentLang === 'ar' ? 'جاري تأكيد طلبكِ...' : 'Booking Order...'}`;
+
+      const title = currentLang === 'ar' ? currentProduct.name_ar : currentProduct.name_en;
+      
+      // Trigger conversion pixel
+      const { tiktokEventId, snapEventId } = trackPurchase(currentProduct.slug, currentBundlePrice, title, phone);
+      const urlParams = new URLSearchParams(window.location.search);
+
+      // Order parameters payload
+      const orderPayload = {
+        customer_name: name,
+        phone: phone,
+        alt_phone: altPhone,
+        city: city,
+        region: "Algeria",
+        address: address,
+        product_name: `${title} (Size: ${selectedSize}${selectedColor ? `, Color: ${selectedColor}` : ''})`,
+        quantity: currentQty,
+        total_price: currentBundlePrice,
+        tiktok_event_id: tiktokEventId,
+        snap_event_id: snapEventId,
+        utm_source: urlParams.get('utm_source') || 'tiktok',
+        utm_medium: urlParams.get('utm_medium') || 'cpc',
+        utm_campaign: urlParams.get('utm_campaign') || '',
+        notes: notes,
+        product_id: currentProduct.id
+      };
+
+      try {
+        const response = await fetch(`${API_URL}/api/orders`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(orderPayload)
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          successOrderId.innerText = data.order_id;
+          successOverlay.style.display = 'flex';
+          orderForm.reset();
+          currentQty = 1;
+          updatePricing();
+          checkoutFired = false;
+        } else {
+          alert(data.error || (currentLang === 'ar' ? 'فشل حجز الطلب، يرجى المحاولة مرة أخرى.' : 'Booking failed, please try again.'));
+        }
+      } catch (error) {
+        console.error('Order submission error:', error);
+        alert(currentLang === 'ar' ? 'حدث خطأ في الاتصال بالخادم، يرجى المحاولة لاحقاً.' : 'Connection error, please try again later.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<i class="fa-solid fa-lock"></i> ${currentLang === 'ar' ? translations.ar.btnText : translations.en.btnText}`;
+      }
+    });
+
+    // Close Success Overlay
+    successCloseBtn.addEventListener('click', () => {
+      successOverlay.style.display = 'none';
+      navigateToHome();
+    });
+
+    // Localizations toggle handler
+    langToggle.addEventListener('click', () => {
+      if (currentLang === 'ar') {
+        currentLang = 'en';
+        document.documentElement.setAttribute('lang', 'en');
+        document.documentElement.setAttribute('dir', 'ltr');
+        langToggle.innerText = 'AR';
+      } else {
+        currentLang = 'ar';
+        document.documentElement.setAttribute('lang', 'ar');
+        document.documentElement.setAttribute('dir', 'rtl');
+        langToggle.innerText = 'EN';
+      }
+
+      // Update All Document Text Nodes
+      const t = translations[currentLang];
+      document.getElementById('promo-banner').innerText = t.promo;
+      document.getElementById('tagline-text').innerText = t.tagline;
+      document.getElementById('active-users-count').innerText = t.active;
+      document.getElementById('stock-ticker').innerText = t.stock;
+
+      // Brand Story Section
+      document.getElementById('story-title').innerText = t.storyTitle;
+      document.getElementById('story-text-1').innerText = currentLang === 'ar' ? translations.ar.storyText1 : translations.en.storyText1;
+      document.getElementById('story-text-2').innerText = currentLang === 'ar' ? translations.ar.storyText2 : translations.en.storyText2;
+
+      // Brand Product analysis
+      document.getElementById('analysis-title').innerText = t.analysisTitle;
+      document.getElementById('karakou-header').innerText = t.karakouHeader;
+      document.getElementById('karakou-body').innerText = t.karakouBody;
+      document.getElementById('caftan-header').innerText = t.caftanHeader;
+      document.getElementById('caftan-body').innerText = t.caftanBody;
+
+      // Accordion FAQ titles
+      document.getElementById('faq-title').innerText = t.faqTitle;
+      document.getElementById('faq-q1').querySelector('span').innerText = t.faqQ1;
+      document.getElementById('faq-a1').querySelector('p').innerText = t.faqA1;
+      document.getElementById('faq-q2').querySelector('span').innerText = t.faqQ2;
+      document.getElementById('faq-a2').querySelector('p').innerText = t.faqA2;
+      document.getElementById('faq-q3').querySelector('span').innerText = t.faqQ3;
+      document.getElementById('faq-a3').querySelector('p').innerText = t.faqA3;
+      document.getElementById('faq-q4').querySelector('span').innerText = t.faqQ4;
+      document.getElementById('faq-a4').querySelector('p').innerText = t.faqA4;
+
+      // Banner text Switchers
+      document.getElementById('slide-badge-1').innerText = currentLang === 'ar' ? 'القفطان الجزائري الفاخر' : 'Luxury Algerian Caftan';
+      document.getElementById('slide-title-1').innerText = currentLang === 'ar' ? 'سحر الشرق وأناقة الملكات' : 'Eastern Charm & Royal Elegance';
+      document.getElementById('slide-desc-1').innerText = currentLang === 'ar' ? 'تصاميم مطرزة بالخيوط الذهبية الفاخرة لحضور ملكي متميز في الأعراس' : 'Handcrafted designs with premium gold thread for a royal wedding presence';
+      document.getElementById('slide-btn-1').innerText = currentLang === 'ar' ? 'اكتشفي التشكيلة' : 'Discover Collection';
+
+      document.getElementById('slide-badge-2').innerText = currentLang === 'ar' ? 'الكاراكو العاصمي التقليدي' : 'Traditional Algiers Karakou';
+      document.getElementById('slide-title-2').innerText = currentLang === 'ar' ? 'عراقة الماضي بلمسة عصرية' : 'Heritage of the Past with a Modern Touch';
+      document.getElementById('slide-desc-2').innerText = currentLang === 'ar' ? 'سترة مخملية مطرزة بالفتلة العاصمية الأصيلة مقترنة بحرير طبيعي انسيابي' : 'Velvet jacket hand-embroidered with authentic Algiers Fetla gold threads';
+      document.getElementById('slide-btn-2').innerText = currentLang === 'ar' ? 'شاهدي التصاميم' : 'View Designs';
+
+      document.getElementById('slide-badge-3').innerText = currentLang === 'ar' ? 'مجموعة العرائس والأفراح' : 'Bridal & Wedding Collection';
+      document.getElementById('slide-title-3').innerText = currentLang === 'ar' ? 'تألقي كملكة في ليلة العمر' : 'Shine Like a Queen on Your Big Day';
+      document.getElementById('slide-desc-3').innerText = currentLang === 'ar' ? 'كاراكو وقفاطين زفاف مصممة خصيصاً لتخليد أسعد لحظات حياتكِ' : 'Custom wedding Karakous and Caftans to celebrate your most precious moments';
+      document.getElementById('slide-btn-3').innerText = currentLang === 'ar' ? 'عرض مجموعة الأفراح' : 'View Bridal Set';
+
+      // Catalog header
+      document.getElementById('catalog-title').innerText = currentLang === 'ar' ? 'التشكيلة الملكية الفاخرة' : 'The Royal Luxury Collection';
+
+      // Back button
+      document.getElementById('btn-back-text').innerText = t.backToStore;
+      document.getElementById('back-arrow-icon').className = currentLang === 'ar' ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-left";
+
+      // Form texts
+      document.getElementById('form-heading').innerText = t.formTitle;
+      document.getElementById('lbl-name').innerText = t.name;
+      document.getElementById('customer_name').placeholder = t.namePlh;
+      document.getElementById('lbl-phone').innerText = t.phone;
+      document.getElementById('phone').placeholder = t.phonePlh;
+      document.getElementById('lbl-alt-phone').innerText = t.altPhone;
+      document.getElementById('lbl-city').innerText = t.city;
+      document.getElementById('city-placeholder').innerText = t.cityPlh;
+      document.getElementById('lbl-address').innerText = t.address;
+      document.getElementById('address').placeholder = t.addressPlh;
+      document.getElementById('lbl-qty').innerText = t.qty;
+      document.getElementById('lbl-notes').innerText = t.notes;
+      document.getElementById('btn-text').innerText = t.btnText;
+
+      // Trust Badges details
+      document.querySelectorAll('.t-badge-shipping-title').forEach(el => el.innerText = t.shippingTitle);
+      document.querySelectorAll('.t-badge-shipping-desc').forEach(el => el.innerText = t.shippingDesc);
+      document.querySelectorAll('.t-badge-cod-title').forEach(el => el.innerText = t.codTitle);
+      document.querySelectorAll('.t-badge-cod-desc').forEach(el => el.innerText = t.codDesc);
+      document.querySelectorAll('.t-badge-quality-title').forEach(el => el.innerText = t.qualityTitle);
+      document.querySelectorAll('.t-badge-quality-desc').forEach(el => el.innerText = t.qualityDesc);
+
+      // Sticky button & reviews
+      document.getElementById('sticky-btn-text').innerText = t.stickyBtn;
+      document.getElementById('sticky-total-lbl').innerText = t.stickyTotal;
+      document.getElementById('success-title').innerText = t.successTitle;
+      document.getElementById('success-msg').innerText = t.successMsg;
+      document.getElementById('success-close-btn').innerText = t.close;
+
+      // Detail Titles
+      document.getElementById('lbl-size-title').innerText = t.selectSize;
+      document.getElementById('lbl-color-title').innerText = t.selectColor;
+      document.getElementById('lbl-story-card-title').innerText = t.storyCardTitle;
+      document.getElementById('lbl-fabric-card-title').innerText = t.fabricCardTitle;
+      document.getElementById('lbl-embroidery-card-title').innerText = t.embroideryCardTitle;
+      
+      const sizeHintEl = document.getElementById('lbl-size-hint');
+      if (sizeHintEl) sizeHintEl.innerText = t.sizeHint;
+      
+      const stepsTitleEl = document.getElementById('lbl-steps-title');
+      if (stepsTitleEl) stepsTitleEl.innerText = t.stepsTitle;
+      
+      const step1El = document.getElementById('lbl-step-1');
+      if (step1El) step1El.innerHTML = t.step1;
+      
+      const step2El = document.getElementById('lbl-step-2');
+      if (step2El) step2El.innerHTML = t.step2;
+      
+      const step3El = document.getElementById('lbl-step-3');
+      if (step3El) step3El.innerHTML = t.step3;
+
+      // Newly added landing page translation updates
+      const quickBuyEl = document.getElementById('quick-buy-text');
+      if (quickBuyEl) quickBuyEl.innerText = t.quickBuyText;
+
+      const designerSigEl = document.getElementById('lbl-designer-sig');
+      if (designerSigEl) designerSigEl.innerText = t.designerSig;
+
+      const reviewsTitleEl = document.getElementById('lbl-reviews-title');
+      if (reviewsTitleEl) reviewsTitleEl.innerText = t.reviewsTitle;
+
+      const luxuryBadgeEl = document.querySelector('.luxury-gallery-overlay');
+      if (luxuryBadgeEl) luxuryBadgeEl.innerHTML = '<i class="fa-solid fa-crown"></i> ' + t.luxuryBadge;
+
+      // Re-render dynamic elements
+      renderProductsGrid();
+
+      if (currentProduct) {
+        openProductDetails(currentProduct);
+      }
+    });
+
+    // Boot App
+    initApp();
+  </script>
+</body>
+</html>

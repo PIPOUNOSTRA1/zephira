@@ -1,0 +1,386 @@
+{
+  "collections": [
+    {
+      "id": 1,
+      "slug": "algerian-caftans",
+      "name_ar": "القفطان الجزائري الفاخر",
+      "name_en": "Luxury Algerian Caftans",
+      "description_ar": "مجموعة القفطان الجزائري الفاخر - قفاطين راقية للمناسبات والأعراس تعكس أصالة التراث الجزائري العريق بتطريزات ذهبية فريدة",
+      "description_en": "Luxury Algerian Caftans Collection - Premium caftans for weddings and special occasions reflecting the heritage of Algerian craftsmanship with golden embroidery.",
+      "image_url": "/images/collection_caftans.png"
+    },
+    {
+      "id": 2,
+      "slug": "algerian-karakou",
+      "name_ar": "الكاراكو العاصمي التقليدي",
+      "name_en": "Traditional Algerian Karakou",
+      "description_ar": "مجموعة الكاراكو العاصمي - أناقة عاصمية خالدة تجمع بين سترة المخمل المطرزة بالفتلة والبنطلون الحريري لإطلالة متميزة",
+      "description_en": "Traditional Algerian Karakou Collection - Timeless Algiers elegance combining embroidered velvet jackets with silk pants/skirts for a royal look.",
+      "image_url": "/images/collection_karakou.png"
+    },
+    {
+      "id": 3,
+      "slug": "bridal-special",
+      "name_ar": "مجموعة العرائس والأفراح",
+      "name_en": "Bridal & Wedding Special",
+      "description_ar": "مجموعة العرائس والأفراح - قفاطين وكاراكو مصممة خصيصاً للعروس لتتألق في ليلة العمر بأفخم التطريزات وأرقى الأقمشة",
+      "description_en": "Bridal & Wedding Special Collection - Exquisite caftans and karakous custom-tailored for brides to shine on their special day.",
+      "image_url": "/images/collection_bridal.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "slug": "emerald-royal-caftan",
+      "name_ar": "القفطان الملكي الأخضر",
+      "name_en": "Emerald Royal Caftan",
+      "description_ar": "قفطان ملكي جزائري فاخر من قطيفة الجينز الأصلية، مطرز يدوياً بالخيط الذهبي الفاخر ومزين بالأحجار الكريمة اللامعة. يأتي مع حزام ذهبي منسق لإطلالة أنيقة في الأعراس والمناسبات السعيدة.",
+      "description_en": "A luxurious royal Algerian Caftan made of authentic velvet, hand-embroidered with premium gold thread and decorated with sparkling gems. Comes with a matching gold belt for an elegant look at weddings.",
+      "price": 48000,
+      "old_price": 75000,
+      "image_url": "/images/emerald_caftan.png",
+      "images": [
+        "/images/emerald_caftan.png",
+        "/images/royal_blue_karakou.png",
+        "/images/burgundy_caftan.png"
+      ],
+      "collection_id": 1,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Emerald Green",
+        "Gold"
+      ],
+      "is_featured": true,
+      "in_stock": true,
+      "fabric_ar": "قطيفة الجينز الفاخرة (Velvet) المستوردة خصيصاً، مع بطانة داخلية ناعمة من الحرير الساتاني لراحة تامة.",
+      "fabric_en": "Premium heavy velvet fabric, lined with soft satin silk for maximum comfort and structure.",
+      "design_story_ar": "يجسد هذا التصميم الهيبة والملكية. تم تصميمه للعروس التي تبحث عن إطلالة تجمع بين فخامة التراث العريق وسحر ليلة العمر، لتكون نجمة متلألئة بين الحضور.",
+      "design_story_en": "Inspired by the royal Algerian courts, this caftan evokes majesty and pride, custom tailored for brides wanting to represent absolute heritage on their wedding night.",
+      "embroidery_ar": "تطريز يدوي بالفتلة والمجبود الذهبي المتقن، بنقوش جزائرية كلاسيكية مع تركيب يدوي للخرز اللامع والعقاد.",
+      "embroidery_en": "Hand-embroidered using traditional gold Fetla and Majboud techniques with sparkling crystal beads and hand-braided Aakad buttons."
+    },
+    {
+      "id": 2,
+      "slug": "royal-blue-karakou",
+      "name_ar": "كاراكو عاصمي أزرق ملكي",
+      "name_en": "Algiers Royal Blue Karakou",
+      "description_ar": "كاراكو عاصمي جزائري يجمع بين الحداثة والأصالة. سترة من المخمل الفاخر مطرزة يدوياً بالفتلة العاصمية الكلاسيكية، مع سروال الشلقة من الحرير الطبيعي الانسيابي.",
+      "description_en": "A traditional Algerian Karakou combining modernity and heritage. High-quality velvet jacket hand-embroidered with classic Algiers Fetla, paired with flowing natural silk Chelka trousers.",
+      "price": 65000,
+      "old_price": 95000,
+      "image_url": "/images/royal_blue_karakou.png",
+      "images": [
+        "/images/royal_blue_karakou.png",
+        "/images/emerald_caftan.png",
+        "/images/white_bridal_karakou.png"
+      ],
+      "collection_id": 2,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Royal Blue",
+        "White"
+      ],
+      "is_featured": true,
+      "in_stock": true,
+      "fabric_ar": "سترة من القطيفة الفاخرة باللون الأزرق الملكي، مقترنة مع سروال الشلقة من حرير الكريب الطبيعي الانسيابي.",
+      "fabric_en": "Royal blue velvet jacket combined with high-grade flowing natural silk crepe for the Chelka trousers.",
+      "design_story_ar": "كاراكو الجزائر العاصمة هو فخر الهوية. يروي هذا الموديل قصة الأناقة العاصمية التي تتناقلها العائلات كإرث خالد للمناسبات الفخمة والأفراح.",
+      "design_story_en": "A celebration of Algiers high fashion. This Karakou represents the timeless urban elegance of the Algerian capital, traditionally worn by noblewomen.",
+      "embroidery_ar": "تطريز \"الفتلة\" اليدوي بخيوط ذهبية خالصة تحاكي طيور الجنة وأزهار الياسمين الدمشقية التقليدية.",
+      "embroidery_en": "Intricate hand-made Fetla embroidery depicting jasmine patterns and traditional symbols of beauty using metallic gold threads."
+    },
+    {
+      "id": 3,
+      "slug": "white-bridal-karakou",
+      "name_ar": "كاراكو العروس الأبيض المذهب",
+      "name_en": "White Bridal Majesty Karakou",
+      "description_ar": "كاراكو العروس الأبيض الفخم، مصمم خصيصاً لليلة الزفاف والخطوبة. سترة مخملية بيضاء ناصعة مطرزة بالخيوط الذهبية والخرز اللامع مع سروال مدور من الحرير الفاخر.",
+      "description_en": "A luxurious white bridal Karakou, custom-designed for wedding and engagement nights. Bright white velvet jacket embroidered with gold thread and shiny beads, paired with a rounded skirt made of premium silk.",
+      "price": 85000,
+      "old_price": 120000,
+      "image_url": "/images/white_bridal_karakou.png",
+      "images": [
+        "/images/white_bridal_karakou.png",
+        "/images/royal_blue_karakou.png",
+        "/images/emerald_caftan.png"
+      ],
+      "collection_id": 3,
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Bridal White",
+        "Gold"
+      ],
+      "is_featured": true,
+      "in_stock": true,
+      "fabric_ar": "سترة مخملية بيضاء ناصعة، وسروال مدور فسيح من الحرير الطبيعي الإيطالي الثقيل.",
+      "fabric_en": "Pure white premium velvet jacket combined with Italian heavy silk for the traditional rounded trousers (Seroual Mdouer).",
+      "design_story_ar": "صمم هذا الكاراكو ليكون جوهرة ليلة العمر. البياض الناصع مع بريق الخيوط الذهبية يعكس نقاء وفخامة العروس الجزائرية في أسعد ليالي حياتها.",
+      "design_story_en": "Crafted specifically as a masterwork for brides, combining pure bridal white and brilliant gold to represent purity and prestige in Algerian marriage traditions.",
+      "embroidery_ar": "تطريز كثيف وثقيل بالفتلة والمجبود والخرز الكريستالي اللامع، تم تنفيذه يدوياً بحرفية استغرقت أكثر من 60 ساعة من العمل.",
+      "embroidery_en": "Heavy, dense hand-embroidery using gold thread, pearls, and crystals, requiring over 60 hours of dedicated manual craftsmanship."
+    },
+    {
+      "id": 4,
+      "slug": "burgundy-velvet-caftan",
+      "name_ar": "القفطان المخملي الخمري",
+      "name_en": "Burgundy Velvet Caftan",
+      "description_ar": "قفطان جزائري مذهل بلون خمري دافئ وجذاب. مصنوع من المخمل الفاخر ومطرز بالخيوط الذهبية بتفاصيل دقيقة تنساب على الأطراف والأكمام، مثالي للسهرات والمناسبات العائلية الراقية.",
+      "description_en": "A stunning Algerian Caftan in a warm and attractive burgundy color. Crafted from luxury velvet and embroidered with gold threads in meticulous details along the edges and sleeves, perfect for evening gatherings.",
+      "price": 42000,
+      "old_price": 68000,
+      "image_url": "/images/burgundy_caftan.png",
+      "images": [
+        "/images/burgundy_caftan.png",
+        "/images/emerald_caftan.png",
+        "/images/white_bridal_karakou.png"
+      ],
+      "collection_id": 1,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Burgundy",
+        "Gold"
+      ],
+      "is_featured": false,
+      "in_stock": true,
+      "fabric_ar": "قطيفة فرنسية فاخرة وناعمة الملمس ذات لمعان جذاب باللون الخمري المتميز.",
+      "fabric_en": "Premium French velvet with a deep burgundy shade and soft texture that reflects light elegantly.",
+      "design_story_ar": "يعبر اللون الخمري عن الدفء والوقار. تم تصميم هذا القفطان ليمزج بين هيبة التراث التاريخي والنعومة العصرية، ليكون الخيار الأفضل لسهراتكِ السعيدة.",
+      "design_story_en": "Designed for evening warmth, this caftan blends historical prestige with modern modesty, perfect for family ceremonies and elegant gatherings.",
+      "embroidery_ar": "تطريز ذهبي دقيق وناعم على الصدر والأكمام مع أحزمة المحزمة التقليدية وعقاد منسقة يدوياً بالكامل.",
+      "embroidery_en": "Delicate gold thread embroidery on collar, sleeves, and chest, finished with hand-crafted buttons (Aakad) and a matching waist belt."
+    },
+    {
+      "id": 5,
+      "slug": "chedda-tlemcen-majesty",
+      "name_ar": "الشدة التلمسانية السلطانية",
+      "name_en": "Tlemcen Royal Bridal Chedda",
+      "description_ar": "الشدة التلمسانية الأسطورية، اللباس الأكثر فخامة وعراقة لعروس غرب الجزائر والمصنف عالمياً لدى اليونسكو. تفاصيل ملكية تشمل القفطان المطرز والسترة المذهبة وتاج الجوهر.",
+      "description_en": "The legendary Tlemcen Chedda, the most prestigious traditional bridal attire of Western Algeria, registered by UNESCO. Absolute royalty including embroidered caftan, gold vest, and pearl headwear.",
+      "price": 95000,
+      "old_price": 140000,
+      "image_url": "/images/emerald_caftan.png",
+      "images": [
+        "/images/emerald_caftan.png",
+        "/images/white_bridal_karakou.png",
+        "/images/burgundy_caftan.png"
+      ],
+      "collection_id": 3,
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Gold",
+        "Royal Red"
+      ],
+      "is_featured": true,
+      "in_stock": true,
+      "fabric_ar": "مزيج ملكي من الحرير البروكار المذهب، سترة مخملية ثقيلة (الستة) وأقمشة الدانتيل والساتان الفاخر.",
+      "fabric_en": "A royal blend of gold brocade silk, heavy velvet jacket, traditional laces, and finest under-linings.",
+      "design_story_ar": "الشدة التلمسانية ليست مجرد فستان بل هي إرث حضاري مصنف كإرث إنساني. تعود أصولها لملوك تلمسان، وتمنح العروس طلّة سلطانية تجعلها ملكة متوجة بحق.",
+      "design_story_en": "Classified by UNESCO, Tlemcen Chedda is a cultural treasure dating back to the royal dynasties of Tlemcen, creating an unforgettable queenly presence for the bride.",
+      "embroidery_ar": "تطريز كثيف بالفتلة والمجبود والكنتير الذهبي الأصيل، مع حبات الجوهر الحقيقية المصنفة يدوياً حبة حبة.",
+      "embroidery_en": "Heavy traditional embroidery using authentic gold Majboud, Kentir, and real pearls stitched onto the fabrics manually."
+    },
+    {
+      "id": 6,
+      "slug": "algiers-badroune-elegance",
+      "name_ar": "البدرون العاصمي الحريري",
+      "name_en": "Algiers Badroune Silk Elegance",
+      "description_ar": "البدرون العاصمي المتميز بقصته الانسيابية التي تبرز رشاقة المرأة وجاذبيتها. سترة متصلة مطرزة بالفتلة الرقيقة تتدفق إلى الأسفل بنعومة الحرير الراقي.",
+      "description_en": "The Algiers Badroune featuring a sleek, flowing design that enhances feminine grace. Styled with delicate gold Fetla embroidery flowing into smooth silk trousers.",
+      "price": 38000,
+      "old_price": 55000,
+      "image_url": "/images/royal_blue_karakou.png",
+      "images": [
+        "/images/royal_blue_karakou.png",
+        "/images/white_bridal_karakou.png",
+        "/images/emerald_caftan.png"
+      ],
+      "collection_id": 2,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "White",
+        "Creamy Ivory"
+      ],
+      "is_featured": false,
+      "in_stock": true,
+      "fabric_ar": "حرير كريب طبيعي ناعم ومريح مقترن بلمسات مخملية خفيفة على الياقة والكتف.",
+      "fabric_en": "Natural silk crepe and flowing satin, with subtle velvet details along the shoulders and borders.",
+      "design_story_ar": "ابتكر البدرون ليكون عنواناً للحداثة الممزوجة بأصالة قصبة الجزائر. إنه اللباس المفضّل للعروس للاستقبال أو السهرة بفضل قصته المريحة والأنيقة.",
+      "design_story_en": "Created as a bridge between tradition and modernity. Algiers Badroune is highly favored by modern brides for its lightweight, elegant silhouette.",
+      "embroidery_ar": "تطريز \"الفتلة\" الذهبي الرقيق على الصدر والأكمام مع لمسة ناعمة من العقاد التقليدية.",
+      "embroidery_en": "Delicate gold Fetla threads hand-guided on the collar and chest area with traditional hand-wrapped buttons."
+    },
+    {
+      "id": 7,
+      "slug": "chaoui-djebba-aures",
+      "name_ar": "الجبة الشاوية الأوراسية",
+      "name_en": "Chaoui Djebba of Aurès",
+      "description_ar": "الجبة الشاوية الفخمة التي ترمز لشموخ جبال الأوراس وعزة المرأة الأوراسية الحرة. تتميز بالألوان الحيوية والرموز الأمازيغية العريقة وتصميم مريح وأنيق.",
+      "description_en": "The magnificent Chaoui Djebba representing the pride of the Aurès mountains. Characterized by vibrant colors, ancestral Amazigh symbols, and a majestic fit.",
+      "price": 32000,
+      "old_price": 48000,
+      "image_url": "/images/burgundy_caftan.png",
+      "images": [
+        "/images/burgundy_caftan.png",
+        "/images/emerald_caftan.png",
+        "/images/royal_blue_karakou.png"
+      ],
+      "collection_id": 1,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Midnight Black",
+        "Royal Red"
+      ],
+      "is_featured": false,
+      "in_stock": true,
+      "fabric_ar": "قطيفة خفيفة وناعمة (Velvet) مقترنة بأشرطة ملونة منسوجة يدوياً.",
+      "fabric_en": "Soft lightweight velvet paired with colorful hand-woven Berber ribbons.",
+      "design_story_ar": "تحمل الجبة الشاوية تاريخ ثورة الأوراس وشموخ جبالها. الألوان والتطريز يرمزان للفرح والحياة الأمازيغية الحرة، وهي تعبير عن القوة والجمال الأصيل.",
+      "design_story_en": "Representing the historic mountains of Aurès. Its vibrant borders symbolize joy, nature, and the free-spirited Amazigh lifestyle.",
+      "embroidery_ar": "تطريز كثيف بالخيوط الحريرية اللامعة ورسومات الحلي البربرية الفضية التقليدية (الخلالة) والخرز.",
+      "embroidery_en": "Vibrant thread embroidery (Sorsar) copying traditional Berber jewelry motifs and protective silver symbols."
+    },
+    {
+      "id": 8,
+      "slug": "constantine-fergani-velvet",
+      "name_ar": "الجبة القسنطينية الفرقاني",
+      "name_en": "Constantine Djebba Fergani",
+      "description_ar": "الجبة القسنطينية الأصلية (الفرقاني)، اللباس الأكثر فخامة في الشرق الجزائري. مخمل ملكي ثقيل مطرز بالكامل بخيوط المجبود الذهبية بنقوش الطاووس والأزهار الأسطورية.",
+      "description_en": "The authentic Constantine Djebba (Fergani), the peak of eastern Algerian luxury. Heavy royal velvet fully embroidered with golden Majboud depicting peacock and floral patterns.",
+      "price": 88000,
+      "old_price": 130000,
+      "image_url": "/images/burgundy_caftan.png",
+      "images": [
+        "/images/burgundy_caftan.png",
+        "/images/white_bridal_karakou.png",
+        "/images/emerald_caftan.png"
+      ],
+      "collection_id": 3,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Imperial Burgundy",
+        "Emerald Green"
+      ],
+      "is_featured": true,
+      "in_stock": true,
+      "fabric_ar": "قطيفة جنوة الأصلية الثقيلة المستوردة خصيصاً لتحمل التطريز الذهبي الكثيف والخرز الكريستالي.",
+      "fabric_en": "Heavy authentic Genoa velvet, specifically selected to support the dense gold embroidery and crystal weights.",
+      "design_story_ar": "الفرقاني هو قطعة إرث تاريخية تتناقلها الأمهات للفتيات ككنز عائلي. يرمز إلى الوقار والجاه، وتألقكِ به يجعلكِ ترتدين قطعة من عمق التاريخ الجزائري.",
+      "design_story_en": "A heirloom masterpiece passed down from mother to daughter. The Fergani represents dignity, status, and centuries of Constantine art and royalty.",
+      "embroidery_ar": "تطريز يدوي مكثف بالذهب الخالص (المجبود والفتلة)، يغطي الصدر والكتف والأطراف بنقوش الطاووس والورود التاريخية.",
+      "embroidery_en": "Dense, manual gold thread embroidery (Majboud) covering the front, chest, and borders with classic peacock and rose motifs."
+    },
+    {
+      "id": 9,
+      "slug": "kabyle-traditional-dress",
+      "name_ar": "الجبة القبائلية الأمازيغية",
+      "name_en": "Traditional Kabyle Djeba",
+      "description_ar": "الجبة القبائلية بألوانها الزاهية المشرقة التي ترمز لجمال طبيعة بلاد القبائل وجبال جرجرة. تأتي مع الحزام الحريري التقليدي والشرائط المنسوجة باليد.",
+      "description_en": "The traditional Kabyle Djeba with bright, cheerful colors representing the nature of Kabylie. Includes the classic woven silk belt and colorful hand-guided patterns.",
+      "price": 28000,
+      "old_price": 42000,
+      "image_url": "/images/white_bridal_karakou.png",
+      "images": [
+        "/images/white_bridal_karakou.png",
+        "/images/royal_blue_karakou.png",
+        "/images/burgundy_caftan.png"
+      ],
+      "collection_id": 1,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Bridal White",
+        "Bright Yellow"
+      ],
+      "is_featured": false,
+      "in_stock": true,
+      "fabric_ar": "قطن طبيعي خفيف وصحي مقترن بالحرير والشرائط الملونة لراحة تامة.",
+      "fabric_en": "Premium lightweight cotton, mixed with silk ribbons and traditional colorful braids.",
+      "design_story_ar": "تروي الجبة القبائلية قصة ارتباط الأمازيغ بأرضهم وهويتهم العريقة. تعبر ألوان الأشرطة (الأصفر والأخضر والأحمر) عن الشمس والطبيعة والثورة والأمل.",
+      "design_story_en": "Every ribbon on the Kabyle dress tells a story of identity and attachment to the Amazigh land. Colors reflect the sun, fertility, and hope.",
+      "embroidery_ar": "تطريز يدوي ناعم ومتقاطع مع دمج شرائط الدانتيل والأشرطة الملونة الزاهية (الزيغزاغ) على الصدر والأطراف.",
+      "embroidery_en": "Detailed geometric patterns created using traditional colorful zigzag ribbons and fine hand-woven braids."
+    },
+    {
+      "id": 10,
+      "slug": "naili-princess-dress",
+      "name_ar": "الفستان النايلي الأصيل",
+      "name_en": "Naili Princess Steppe Dress",
+      "description_ar": "الفستان النايلي التقليدي المتميز بنقائه ولونه الأبيض الناصع المنساب. يرمز للشهامة والوقار والجمال الصحراوي الراقي لمنطقة أولاد نايل بالهضاب العليا.",
+      "description_en": "The traditional Naili attire, distinguished by its purity and flowing white layers. Symbolizing dignity, chivalry, and desert beauty of the highlands.",
+      "price": 35000,
+      "old_price": 52000,
+      "image_url": "/images/white_bridal_karakou.png",
+      "images": [
+        "/images/white_bridal_karakou.png",
+        "/images/emerald_caftan.png",
+        "/images/royal_blue_karakou.png"
+      ],
+      "collection_id": 3,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Pure White",
+        "Cream"
+      ],
+      "is_featured": false,
+      "in_stock": true,
+      "fabric_ar": "شيفون فرنسي شفاف وناعم مع بطانة من الحرير الناعم لراحة فائقة وانسيابية في الحركة.",
+      "fabric_en": "French chiffon and soft silk lining, layered to create fluid movement and steppe elegance.",
+      "design_story_ar": "يعبر اللباس النايلي عن كرم وشهامة قبائل أولاد نايل. يتمايل الفستان برقة ونعومة مع كل خطوة للعروس ليمنحها طلّة هادئة وراقية تخطف الأنفاس.",
+      "design_story_en": "Reflecting the nobility and hospitality of the Naili tribe. The dress sways gently with every step, creating a serene, breathable, and royal presence.",
+      "embroidery_ar": "تطريز بالخيوط الفضية أو الذهبية الرقيقة والخرز المضيء وشرائط الدانتيل البيضاء المنسقة باليد.",
+      "embroidery_en": "Fine silver or gold thread embroidery paired with white lace details, carefully hand-guided on the layers."
+    }
+  ],
+  "orders": []
+}
